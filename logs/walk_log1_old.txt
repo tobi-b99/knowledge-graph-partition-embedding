@@ -1,0 +1,581 @@
+Using server port: 1808
+Re-using existing walks in './walks'.
+Using 8 threads for walk generation and training.
+Using depth 4
+Generating 100 walks per entity.
+Only walks are being generated, training is performed.
+09 Mai 2023 08:49:54  WARN [main] (WalkGenerationManager.java:179) - You specified a directory. Trying to parse files in the directory. The program will fail (later) if you use an entity selector that requires one ontology.
+09 Mai 2023 08:49:54  INFO [Thread-0] (NtMemoryWalkGenerator.java:272) - STARTED thread for file article_categories_en.ttl
+09 Mai 2023 08:49:54  INFO [Thread-4] (NtMemoryWalkGenerator.java:272) - STARTED thread for file skos_categories_en.ttl
+09 Mai 2023 08:49:54  INFO [Thread-1] (NtMemoryWalkGenerator.java:272) - STARTED thread for file instance_types_en.ttl
+09 Mai 2023 08:49:54  INFO [Thread-3] (NtMemoryWalkGenerator.java:272) - STARTED thread for file mappingbased_objects_en.ttl
+09 Mai 2023 08:49:54  INFO [Thread-2] (NtMemoryWalkGenerator.java:272) - STARTED thread for file instance_types_transitive_en.ttl
+09 Mai 2023 08:51:48  INFO [Thread-4] (NtMemoryWalkGenerator.java:421) - File skos_categories_en.ttl successfully read. 21011440 subjects loaded.
+09 Mai 2023 08:51:48  INFO [Thread-4] (NtMemoryWalkGenerator.java:278) - Thread for file skos_categories_en.ttl completed.
+09 Mai 2023 08:52:47  INFO [Thread-1] (NtMemoryWalkGenerator.java:421) - File instance_types_en.ttl successfully read. 28998067 subjects loaded.
+09 Mai 2023 08:52:47  INFO [Thread-1] (NtMemoryWalkGenerator.java:278) - Thread for file instance_types_en.ttl completed.
+09 Mai 2023 09:00:35  INFO [Thread-3] (NtMemoryWalkGenerator.java:421) - File mappingbased_objects_en.ttl successfully read. 67895756 subjects loaded.
+09 Mai 2023 09:00:35  INFO [Thread-3] (NtMemoryWalkGenerator.java:278) - Thread for file mappingbased_objects_en.ttl completed.
+09 Mai 2023 09:13:46  INFO [Thread-0] (NtMemoryWalkGenerator.java:421) - File article_categories_en.ttl successfully read. 80247975 subjects loaded.
+09 Mai 2023 09:13:47  INFO [Thread-0] (NtMemoryWalkGenerator.java:278) - Thread for file article_categories_en.ttl completed.
+09 Mai 2023 09:15:22  INFO [Thread-2] (NtMemoryWalkGenerator.java:421) - File instance_types_transitive_en.ttl successfully read. 81730770 subjects loaded.
+09 Mai 2023 09:15:22  INFO [Thread-2] (NtMemoryWalkGenerator.java:278) - Thread for file instance_types_transitive_en.ttl completed.
+09 Mai 2023 09:15:22  INFO [main] (NtMemoryWalkGenerator.java:247) - Data read.
+09 Mai 2023 09:33:41  INFO [main] (ContinuationEntitySelector.java:95) - Copy file c:\Users\Admin\OneDrive\Documents\GitHub\knowledge-graph-embedding-partition\.\walks\walk_file_0_copied.txt.gz to walk directory.
+09 Mai 2023 09:33:41  INFO [main] (ContinuationEntitySelector.java:97) - Copy operation completed.
+09 Mai 2023 09:48:41  INFO [main] (ContinuationEntitySelector.java:95) - Copy file c:\Users\Admin\OneDrive\Documents\GitHub\knowledge-graph-embedding-partition\.\walks\walk_file_1_copied.txt.gz to walk directory.
+09 Mai 2023 09:48:41  INFO [main] (ContinuationEntitySelector.java:97) - Copy operation completed.
+09 Mai 2023 10:04:30  INFO [main] (ContinuationEntitySelector.java:95) - Copy file c:\Users\Admin\OneDrive\Documents\GitHub\knowledge-graph-embedding-partition\.\walks\walk_file_10_copied.txt.gz to walk directory.
+09 Mai 2023 10:04:31  INFO [main] (ContinuationEntitySelector.java:97) - Copy operation completed.
+09 Mai 2023 10:08:34 ERROR [main] (ContinuationEntitySelector.java:86) - An exception occurred while reading walk file 'walk_file_11.txt.gz'. Continue with next file.
+09 Mai 2023 10:23:52  INFO [main] (ContinuationEntitySelector.java:95) - Copy file c:\Users\Admin\OneDrive\Documents\GitHub\knowledge-graph-embedding-partition\.\walks\walk_file_2_copied.txt.gz to walk directory.
+09 Mai 2023 10:23:52  INFO [main] (ContinuationEntitySelector.java:97) - Copy operation completed.
+09 Mai 2023 10:39:16  INFO [main] (ContinuationEntitySelector.java:95) - Copy file c:\Users\Admin\OneDrive\Documents\GitHub\knowledge-graph-embedding-partition\.\walks\walk_file_3_copied.txt.gz to walk directory.
+09 Mai 2023 10:39:16  INFO [main] (ContinuationEntitySelector.java:97) - Copy operation completed.
+09 Mai 2023 10:54:37  INFO [main] (ContinuationEntitySelector.java:95) - Copy file c:\Users\Admin\OneDrive\Documents\GitHub\knowledge-graph-embedding-partition\.\walks\walk_file_4_copied.txt.gz to walk directory.
+09 Mai 2023 10:54:37  INFO [main] (ContinuationEntitySelector.java:97) - Copy operation completed.
+09 Mai 2023 11:10:48  INFO [main] (ContinuationEntitySelector.java:95) - Copy file c:\Users\Admin\OneDrive\Documents\GitHub\knowledge-graph-embedding-partition\.\walks\walk_file_5_copied.txt.gz to walk directory.
+09 Mai 2023 11:10:48  INFO [main] (ContinuationEntitySelector.java:97) - Copy operation completed.
+09 Mai 2023 11:26:13  INFO [main] (ContinuationEntitySelector.java:95) - Copy file c:\Users\Admin\OneDrive\Documents\GitHub\knowledge-graph-embedding-partition\.\walks\walk_file_6_copied.txt.gz to walk directory.
+09 Mai 2023 11:26:13  INFO [main] (ContinuationEntitySelector.java:97) - Copy operation completed.
+09 Mai 2023 11:41:32  INFO [main] (ContinuationEntitySelector.java:95) - Copy file c:\Users\Admin\OneDrive\Documents\GitHub\knowledge-graph-embedding-partition\.\walks\walk_file_7_copied.txt.gz to walk directory.
+09 Mai 2023 11:41:32  INFO [main] (ContinuationEntitySelector.java:97) - Copy operation completed.
+09 Mai 2023 11:57:32  INFO [main] (ContinuationEntitySelector.java:95) - Copy file c:\Users\Admin\OneDrive\Documents\GitHub\knowledge-graph-embedding-partition\.\walks\walk_file_8_copied.txt.gz to walk directory.
+09 Mai 2023 11:57:32  INFO [main] (ContinuationEntitySelector.java:97) - Copy operation completed.
+09 Mai 2023 12:10:28  INFO [main] (ContinuationEntitySelector.java:95) - Copy file c:\Users\Admin\OneDrive\Documents\GitHub\knowledge-graph-embedding-partition\.\walks\walk_file_9_copied.txt.gz to walk directory.
+09 Mai 2023 12:10:28  INFO [main] (ContinuationEntitySelector.java:97) - Copy operation completed.
+09 Mai 2023 12:10:28  INFO [main] (ContinuationEntitySelector.java:104) - Walks already generated for 425837 entities.
+09 Mai 2023 12:10:28  INFO [main] (ContinuationEntitySelector.java:105) - Entities before: 8876010
+09 Mai 2023 12:10:30  INFO [main] (ContinuationEntitySelector.java:107) - Entities after removing existing ones: 8450173
+09 Mai 2023 12:10:31  INFO [pool-1-thread-5] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 1000
+09 Mai 2023 12:10:31  INFO [pool-1-thread-5] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:31  INFO [pool-1-thread-5] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 2000
+09 Mai 2023 12:10:31  INFO [pool-1-thread-5] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-1] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 3000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-1] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-6] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 4000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-6] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-1] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 5000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-1] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-8] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 6000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-8] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 7000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 8000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-4] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 9000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-4] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-7] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 10000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-7] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-8] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 11000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-8] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-6] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 12000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-6] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-5] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 13000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-5] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-5] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 14000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-5] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 15000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-7] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 16000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-7] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-4] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 17000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-4] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-6] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 18000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-6] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-7] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 19000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-7] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 20000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-6] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 21000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-6] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-4] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 22000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-4] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-6] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 23000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-6] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-6] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 24000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-6] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 25000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-5] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 26000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-5] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-4] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 27000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-4] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-3] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 28000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-3] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 29000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-8] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 30000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-8] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 31000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 32000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-8] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 33000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-8] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-1] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 34000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-1] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-7] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 35000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-7] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-5] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 36000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-5] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-8] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 37000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-8] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-7] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 38000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-7] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-1] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 39000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-1] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-6] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 40000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-6] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-4] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 41000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-4] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-8] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 42000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-8] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:32  INFO [pool-1-thread-1] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 43000
+09 Mai 2023 12:10:32  INFO [pool-1-thread-1] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 0
+09 Mai 2023 12:10:33  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 44000
+09 Mai 2023 12:10:33  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 21577
+09 Mai 2023 12:10:35  INFO [pool-1-thread-6] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 45000
+09 Mai 2023 12:10:35  INFO [pool-1-thread-6] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 92758
+09 Mai 2023 12:14:35  INFO [pool-1-thread-3] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 46000
+09 Mai 2023 12:14:35  INFO [pool-1-thread-3] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 164313
+09 Mai 2023 12:14:36  INFO [pool-1-thread-8] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 47000
+09 Mai 2023 12:14:36  INFO [pool-1-thread-8] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 235960
+09 Mai 2023 12:19:07  INFO [pool-1-thread-3] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 48000
+09 Mai 2023 12:19:07  INFO [pool-1-thread-3] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 307798
+09 Mai 2023 12:19:08  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 49000
+09 Mai 2023 12:19:08  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 379253
+09 Mai 2023 12:19:10  INFO [pool-1-thread-5] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 50000
+09 Mai 2023 12:19:10  INFO [pool-1-thread-5] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 451986
+09 Mai 2023 12:24:00  INFO [pool-1-thread-6] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 51000
+09 Mai 2023 12:24:00  INFO [pool-1-thread-6] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 523455
+09 Mai 2023 12:24:03  INFO [pool-1-thread-5] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 52000
+09 Mai 2023 12:24:03  INFO [pool-1-thread-5] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 595953
+09 Mai 2023 12:28:29  INFO [pool-1-thread-1] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 53000
+09 Mai 2023 12:28:29  INFO [pool-1-thread-1] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 666498
+09 Mai 2023 12:28:31  INFO [pool-1-thread-3] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 54000
+09 Mai 2023 12:28:31  INFO [pool-1-thread-3] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 735492
+09 Mai 2023 12:28:34  INFO [pool-1-thread-3] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 55000
+09 Mai 2023 12:28:34  INFO [pool-1-thread-3] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 808556
+09 Mai 2023 12:33:12  INFO [pool-1-thread-5] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 56000
+09 Mai 2023 12:33:12  INFO [pool-1-thread-5] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 882329
+09 Mai 2023 12:33:15  INFO [pool-1-thread-5] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 57000
+09 Mai 2023 12:33:15  INFO [pool-1-thread-5] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 955806
+09 Mai 2023 12:37:06  INFO [pool-1-thread-3] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 58000
+09 Mai 2023 12:37:06  INFO [pool-1-thread-3] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 1029953
+09 Mai 2023 12:37:09  INFO [pool-1-thread-4] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 59000
+09 Mai 2023 12:37:09  INFO [pool-1-thread-4] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 1104981
+09 Mai 2023 12:41:32  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 60000
+09 Mai 2023 12:41:32  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 1176936
+09 Mai 2023 12:41:34  INFO [pool-1-thread-5] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 61000
+09 Mai 2023 12:41:34  INFO [pool-1-thread-5] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 1248767
+09 Mai 2023 12:41:36  INFO [pool-1-thread-3] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 62000
+09 Mai 2023 12:41:36  INFO [pool-1-thread-3] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 1321548
+09 Mai 2023 12:46:07  INFO [pool-1-thread-8] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 63000
+09 Mai 2023 12:46:07  INFO [pool-1-thread-8] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 1394805
+09 Mai 2023 12:46:09  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 64000
+09 Mai 2023 12:46:09  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 1467218
+09 Mai 2023 12:50:36  INFO [pool-1-thread-1] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 65000
+09 Mai 2023 12:50:37  INFO [pool-1-thread-1] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 1542148
+09 Mai 2023 12:50:39  INFO [pool-1-thread-6] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 66000
+09 Mai 2023 12:50:39  INFO [pool-1-thread-6] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 1615750
+09 Mai 2023 12:55:17  INFO [pool-1-thread-7] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 67000
+09 Mai 2023 12:55:17  INFO [pool-1-thread-7] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 1687218
+09 Mai 2023 12:55:19  INFO [pool-1-thread-4] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 68000
+09 Mai 2023 12:55:19  INFO [pool-1-thread-4] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 1759803
+09 Mai 2023 12:59:45  INFO [pool-1-thread-6] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 69000
+09 Mai 2023 12:59:45  INFO [pool-1-thread-6] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 1831718
+09 Mai 2023 12:59:48  INFO [pool-1-thread-3] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 70000
+09 Mai 2023 12:59:48  INFO [pool-1-thread-3] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 1903741
+09 Mai 2023 13:03:54  INFO [pool-1-thread-4] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 71000
+09 Mai 2023 13:03:54  INFO [pool-1-thread-4] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 1976863
+09 Mai 2023 13:03:56  INFO [pool-1-thread-7] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 72000
+09 Mai 2023 13:03:56  INFO [pool-1-thread-7] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 2047293
+09 Mai 2023 13:03:59  INFO [pool-1-thread-4] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 73000
+09 Mai 2023 13:03:59  INFO [pool-1-thread-4] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 2119625
+09 Mai 2023 13:08:19  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 74000
+09 Mai 2023 13:08:19  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 2184568
+09 Mai 2023 13:08:20  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 75000
+09 Mai 2023 13:08:20  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 2255888
+09 Mai 2023 13:11:43  INFO [pool-1-thread-8] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 76000
+09 Mai 2023 13:11:43  INFO [pool-1-thread-8] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 2329516
+09 Mai 2023 13:11:46  INFO [pool-1-thread-1] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 77000
+09 Mai 2023 13:11:46  INFO [pool-1-thread-1] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 2402692
+09 Mai 2023 13:16:40  INFO [pool-1-thread-7] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 78000
+09 Mai 2023 13:16:41  INFO [pool-1-thread-7] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 2474104
+09 Mai 2023 13:16:44  INFO [pool-1-thread-6] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 79000
+09 Mai 2023 13:16:44  INFO [pool-1-thread-6] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 2546162
+09 Mai 2023 13:21:51  INFO [pool-1-thread-1] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 80000
+09 Mai 2023 13:21:52  INFO [pool-1-thread-1] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 2618142
+09 Mai 2023 13:21:55  INFO [pool-1-thread-5] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 81000
+09 Mai 2023 13:21:55  INFO [pool-1-thread-5] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 2689409
+09 Mai 2023 13:21:58  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 82000
+09 Mai 2023 13:21:58  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 2761344
+09 Mai 2023 13:27:02  INFO [pool-1-thread-7] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 83000
+09 Mai 2023 13:27:02  INFO [pool-1-thread-7] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 2831447
+09 Mai 2023 13:27:05  INFO [pool-1-thread-8] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 84000
+09 Mai 2023 13:27:05  INFO [pool-1-thread-8] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 2906048
+09 Mai 2023 13:31:59  INFO [pool-1-thread-4] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 85000
+09 Mai 2023 13:31:59  INFO [pool-1-thread-4] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 2978299
+09 Mai 2023 13:32:05  INFO [pool-1-thread-7] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 86000
+09 Mai 2023 13:32:05  INFO [pool-1-thread-7] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 3046698
+09 Mai 2023 13:36:33  INFO [pool-1-thread-5] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 87000
+09 Mai 2023 13:36:33  INFO [pool-1-thread-5] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 3122177
+09 Mai 2023 13:36:35  INFO [pool-1-thread-1] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 88000
+09 Mai 2023 13:36:35  INFO [pool-1-thread-1] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 3194809
+09 Mai 2023 13:41:14  INFO [pool-1-thread-6] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 89000
+09 Mai 2023 13:41:14  INFO [pool-1-thread-6] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 3265488
+09 Mai 2023 13:41:16  INFO [pool-1-thread-7] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 90000
+09 Mai 2023 13:41:16  INFO [pool-1-thread-7] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 3339441
+09 Mai 2023 13:45:43  INFO [pool-1-thread-7] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 91000
+09 Mai 2023 13:45:43  INFO [pool-1-thread-7] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 3411809
+09 Mai 2023 13:45:47  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 92000
+09 Mai 2023 13:45:47  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 3482078
+09 Mai 2023 13:50:26  INFO [pool-1-thread-4] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 93000
+09 Mai 2023 13:50:26  INFO [pool-1-thread-4] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 3555243
+09 Mai 2023 13:50:31  INFO [pool-1-thread-8] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 94000
+09 Mai 2023 13:50:31  INFO [pool-1-thread-8] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 3626243
+09 Mai 2023 13:50:34  INFO [pool-1-thread-8] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 95000
+09 Mai 2023 13:50:34  INFO [pool-1-thread-8] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 3699369
+09 Mai 2023 13:54:58  INFO [pool-1-thread-3] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 96000
+09 Mai 2023 13:54:58  INFO [pool-1-thread-3] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 3769994
+09 Mai 2023 13:55:01  INFO [pool-1-thread-5] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 97000
+09 Mai 2023 13:55:01  INFO [pool-1-thread-5] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 3841027
+09 Mai 2023 13:59:17  INFO [pool-1-thread-8] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 98000
+09 Mai 2023 13:59:17  INFO [pool-1-thread-8] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 3915040
+09 Mai 2023 13:59:19  INFO [pool-1-thread-4] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 99000
+09 Mai 2023 13:59:19  INFO [pool-1-thread-4] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 3988513
+09 Mai 2023 14:03:38  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 100000
+09 Mai 2023 14:03:38  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 4060145
+09 Mai 2023 14:03:40  INFO [pool-1-thread-8] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 101000
+09 Mai 2023 14:03:40  INFO [pool-1-thread-8] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 4130555
+09 Mai 2023 14:08:26  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 102000
+09 Mai 2023 14:08:26  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 4205563
+09 Mai 2023 14:08:29  INFO [pool-1-thread-6] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 103000
+09 Mai 2023 14:08:29  INFO [pool-1-thread-6] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 4278797
+09 Mai 2023 14:12:38  INFO [pool-1-thread-1] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 104000
+09 Mai 2023 14:12:38  INFO [pool-1-thread-1] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 4351599
+09 Mai 2023 14:12:41  INFO [pool-1-thread-4] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 105000
+09 Mai 2023 14:12:41  INFO [pool-1-thread-4] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 4424634
+09 Mai 2023 14:12:44  INFO [pool-1-thread-4] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 106000
+09 Mai 2023 14:12:44  INFO [pool-1-thread-4] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 4496557
+09 Mai 2023 14:16:57  INFO [pool-1-thread-4] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 107000
+09 Mai 2023 14:16:57  INFO [pool-1-thread-4] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 4568879
+09 Mai 2023 14:16:59  INFO [pool-1-thread-7] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 108000
+09 Mai 2023 14:16:59  INFO [pool-1-thread-7] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 4642073
+09 Mai 2023 14:21:20  INFO [pool-1-thread-5] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 109000
+09 Mai 2023 14:21:20  INFO [pool-1-thread-5] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 4710473
+09 Mai 2023 14:21:23  INFO [pool-1-thread-4] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 110000
+09 Mai 2023 14:21:23  INFO [pool-1-thread-4] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 4780239
+09 Mai 2023 14:25:54  INFO [pool-1-thread-8] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 111000
+09 Mai 2023 14:25:54  INFO [pool-1-thread-8] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 4852540
+09 Mai 2023 14:25:56  INFO [pool-1-thread-5] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 112000
+09 Mai 2023 14:25:56  INFO [pool-1-thread-5] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 4924273
+09 Mai 2023 14:30:35  INFO [pool-1-thread-7] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 113000
+09 Mai 2023 14:30:35  INFO [pool-1-thread-7] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 4999901
+09 Mai 2023 14:30:38  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 114000
+09 Mai 2023 14:30:38  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 5070355
+09 Mai 2023 14:35:32  INFO [pool-1-thread-7] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 115000
+09 Mai 2023 14:35:32  INFO [pool-1-thread-7] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 5141377
+09 Mai 2023 14:35:36  INFO [pool-1-thread-7] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 116000
+09 Mai 2023 14:35:36  INFO [pool-1-thread-7] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 5215890
+09 Mai 2023 14:39:41  INFO [pool-1-thread-1] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 117000
+09 Mai 2023 14:39:41  INFO [pool-1-thread-1] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 5288474
+09 Mai 2023 14:39:44  INFO [pool-1-thread-4] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 118000
+09 Mai 2023 14:39:44  INFO [pool-1-thread-4] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 5355740
+09 Mai 2023 14:39:47  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 119000
+09 Mai 2023 14:39:47  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 5428195
+09 Mai 2023 14:44:12  INFO [pool-1-thread-5] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 120000
+09 Mai 2023 14:44:12  INFO [pool-1-thread-5] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 5501079
+09 Mai 2023 14:44:15  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 121000
+09 Mai 2023 14:44:15  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 5574023
+09 Mai 2023 14:48:45  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 122000
+09 Mai 2023 14:48:46  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 5647309
+09 Mai 2023 14:48:49  INFO [pool-1-thread-7] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 123000
+09 Mai 2023 14:48:49  INFO [pool-1-thread-7] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 5720219
+09 Mai 2023 14:53:03  INFO [pool-1-thread-7] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 124000
+09 Mai 2023 14:53:03  INFO [pool-1-thread-7] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 5793951
+09 Mai 2023 14:53:06  INFO [pool-1-thread-4] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 125000
+09 Mai 2023 14:53:06  INFO [pool-1-thread-4] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 5864392
+09 Mai 2023 14:57:30  INFO [pool-1-thread-1] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 126000
+09 Mai 2023 14:57:30  INFO [pool-1-thread-1] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 5938679
+09 Mai 2023 14:57:34  INFO [pool-1-thread-3] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 127000
+09 Mai 2023 14:57:34  INFO [pool-1-thread-3] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 6012596
+09 Mai 2023 15:00:59  INFO [pool-1-thread-6] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 128000
+09 Mai 2023 15:00:59  INFO [pool-1-thread-6] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 6084800
+09 Mai 2023 15:01:03  INFO [pool-1-thread-5] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 129000
+09 Mai 2023 15:01:03  INFO [pool-1-thread-5] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 6156875
+09 Mai 2023 15:05:56  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 130000
+09 Mai 2023 15:05:56  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 6230099
+09 Mai 2023 15:05:58  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 131000
+09 Mai 2023 15:05:58  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 6302724
+09 Mai 2023 15:11:04  INFO [pool-1-thread-7] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 132000
+09 Mai 2023 15:11:04  INFO [pool-1-thread-7] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 6373483
+09 Mai 2023 15:11:07  INFO [pool-1-thread-4] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 133000
+09 Mai 2023 15:11:07  INFO [pool-1-thread-4] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 6442046
+09 Mai 2023 15:11:11  INFO [pool-1-thread-5] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 134000
+09 Mai 2023 15:11:11  INFO [pool-1-thread-5] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 6517132
+09 Mai 2023 15:16:14  INFO [pool-1-thread-8] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 135000
+09 Mai 2023 15:16:14  INFO [pool-1-thread-8] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 6588936
+09 Mai 2023 15:16:16  INFO [pool-1-thread-1] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 136000
+09 Mai 2023 15:16:16  INFO [pool-1-thread-1] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 6657234
+09 Mai 2023 15:20:48  INFO [pool-1-thread-3] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 137000
+09 Mai 2023 15:20:48  INFO [pool-1-thread-3] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 6727553
+09 Mai 2023 15:20:52  INFO [pool-1-thread-4] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 138000
+09 Mai 2023 15:20:52  INFO [pool-1-thread-4] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 6798667
+09 Mai 2023 15:25:08  INFO [pool-1-thread-6] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 139000
+09 Mai 2023 15:25:09  INFO [pool-1-thread-6] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 6871072
+09 Mai 2023 15:25:12  INFO [pool-1-thread-3] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 140000
+09 Mai 2023 15:25:12  INFO [pool-1-thread-3] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 6943333
+09 Mai 2023 15:29:46  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 141000
+09 Mai 2023 15:29:46  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 7013904
+09 Mai 2023 15:29:48  INFO [pool-1-thread-1] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 142000
+09 Mai 2023 15:29:48  INFO [pool-1-thread-1] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 7088916
+09 Mai 2023 15:34:24  INFO [pool-1-thread-3] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 143000
+09 Mai 2023 15:34:24  INFO [pool-1-thread-3] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 7159996
+09 Mai 2023 15:34:26  INFO [pool-1-thread-5] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 144000
+09 Mai 2023 15:34:26  INFO [pool-1-thread-5] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 7232523
+09 Mai 2023 15:39:05  INFO [pool-1-thread-7] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 145000
+09 Mai 2023 15:39:05  INFO [pool-1-thread-7] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 7305256
+09 Mai 2023 15:39:08  INFO [pool-1-thread-5] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 146000
+09 Mai 2023 15:39:08  INFO [pool-1-thread-5] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 7377953
+09 Mai 2023 15:39:11  INFO [pool-1-thread-4] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 147000
+09 Mai 2023 15:39:11  INFO [pool-1-thread-4] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 7449724
+09 Mai 2023 15:43:43  INFO [pool-1-thread-7] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 148000
+09 Mai 2023 15:43:43  INFO [pool-1-thread-7] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 7523922
+09 Mai 2023 15:43:46  INFO [pool-1-thread-8] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 149000
+09 Mai 2023 15:43:46  INFO [pool-1-thread-8] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 7595293
+09 Mai 2023 15:48:33  INFO [pool-1-thread-3] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 150000
+09 Mai 2023 15:48:33  INFO [pool-1-thread-3] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 7669523
+09 Mai 2023 15:48:37  INFO [pool-1-thread-8] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 151000
+09 Mai 2023 15:48:37  INFO [pool-1-thread-8] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 7742498
+09 Mai 2023 15:53:15  INFO [pool-1-thread-5] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 152000
+09 Mai 2023 15:53:15  INFO [pool-1-thread-5] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 7813004
+09 Mai 2023 15:53:18  INFO [pool-1-thread-5] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 153000
+09 Mai 2023 15:53:18  INFO [pool-1-thread-5] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 7886907
+09 Mai 2023 15:57:53  INFO [pool-1-thread-1] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 154000
+09 Mai 2023 15:57:53  INFO [pool-1-thread-1] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 7959589
+09 Mai 2023 15:57:56  INFO [pool-1-thread-3] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 155000
+09 Mai 2023 15:57:56  INFO [pool-1-thread-3] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 8031861
+09 Mai 2023 16:02:33  INFO [pool-1-thread-8] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 156000
+09 Mai 2023 16:02:33  INFO [pool-1-thread-8] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 8103881
+09 Mai 2023 16:02:35  INFO [pool-1-thread-7] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 157000
+09 Mai 2023 16:02:35  INFO [pool-1-thread-7] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 8175572
+09 Mai 2023 16:07:11  INFO [pool-1-thread-3] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 158000
+09 Mai 2023 16:07:11  INFO [pool-1-thread-3] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 8249469
+09 Mai 2023 16:07:13  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 159000
+09 Mai 2023 16:07:13  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 8320252
+09 Mai 2023 16:11:39  INFO [pool-1-thread-4] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 160000
+09 Mai 2023 16:11:39  INFO [pool-1-thread-4] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 8392284
+09 Mai 2023 16:11:41  INFO [pool-1-thread-7] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 161000
+09 Mai 2023 16:11:41  INFO [pool-1-thread-7] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 8465468
+09 Mai 2023 16:11:43  INFO [pool-1-thread-4] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 162000
+09 Mai 2023 16:11:43  INFO [pool-1-thread-4] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 8538418
+09 Mai 2023 16:16:18  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 163000
+09 Mai 2023 16:16:18  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 8612612
+09 Mai 2023 16:16:22  INFO [pool-1-thread-8] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 164000
+09 Mai 2023 16:16:22  INFO [pool-1-thread-8] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 8686644
+09 Mai 2023 16:21:28  INFO [pool-1-thread-5] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 165000
+09 Mai 2023 16:21:28  INFO [pool-1-thread-5] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 8757971
+09 Mai 2023 16:21:31  INFO [pool-1-thread-1] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 166000
+09 Mai 2023 16:21:31  INFO [pool-1-thread-1] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 8829015
+09 Mai 2023 16:25:41  INFO [pool-1-thread-6] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 167000
+09 Mai 2023 16:25:41  INFO [pool-1-thread-6] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 8902692
+09 Mai 2023 16:25:44  INFO [pool-1-thread-7] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 168000
+09 Mai 2023 16:25:44  INFO [pool-1-thread-7] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 8977140
+09 Mai 2023 16:30:13  INFO [pool-1-thread-3] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 169000
+09 Mai 2023 16:30:13  INFO [pool-1-thread-3] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 9046308
+09 Mai 2023 16:30:17  INFO [pool-1-thread-1] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 170000
+09 Mai 2023 16:30:17  INFO [pool-1-thread-1] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 9118381
+09 Mai 2023 16:34:51  INFO [pool-1-thread-1] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 171000
+09 Mai 2023 16:34:51  INFO [pool-1-thread-1] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 9190060
+09 Mai 2023 16:34:53  INFO [pool-1-thread-5] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 172000
+09 Mai 2023 16:34:53  INFO [pool-1-thread-5] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 9261914
+09 Mai 2023 16:39:11  INFO [pool-1-thread-4] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 173000
+09 Mai 2023 16:39:11  INFO [pool-1-thread-4] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 9334856
+09 Mai 2023 16:39:13  INFO [pool-1-thread-3] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 174000
+09 Mai 2023 16:39:13  INFO [pool-1-thread-3] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 9404795
+09 Mai 2023 16:39:16  INFO [pool-1-thread-5] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 175000
+09 Mai 2023 16:39:16  INFO [pool-1-thread-5] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 9472827
+09 Mai 2023 16:43:28  INFO [pool-1-thread-6] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 176000
+09 Mai 2023 16:43:28  INFO [pool-1-thread-6] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 9540934
+09 Mai 2023 16:43:31  INFO [pool-1-thread-8] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 177000
+09 Mai 2023 16:43:31  INFO [pool-1-thread-8] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 9612551
+09 Mai 2023 16:48:13  INFO [pool-1-thread-6] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 178000
+09 Mai 2023 16:48:13  INFO [pool-1-thread-6] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 9686456
+09 Mai 2023 16:48:17  INFO [pool-1-thread-3] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 179000
+09 Mai 2023 16:48:17  INFO [pool-1-thread-3] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 9758797
+09 Mai 2023 16:52:44  INFO [pool-1-thread-1] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 180000
+09 Mai 2023 16:52:44  INFO [pool-1-thread-1] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 9835189
+09 Mai 2023 16:52:46  INFO [pool-1-thread-1] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 181000
+09 Mai 2023 16:52:46  INFO [pool-1-thread-1] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 9905919
+09 Mai 2023 16:57:07  INFO [pool-1-thread-6] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 182000
+09 Mai 2023 16:57:07  INFO [pool-1-thread-6] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 9976135
+09 Mai 2023 16:57:11  INFO [pool-1-thread-5] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 183000
+09 Mai 2023 16:57:11  INFO [pool-1-thread-5] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 10047767
+09 Mai 2023 17:01:32  INFO [pool-1-thread-5] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 184000
+09 Mai 2023 17:01:32  INFO [pool-1-thread-5] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 10118828
+09 Mai 2023 17:01:37  INFO [pool-1-thread-7] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 185000
+09 Mai 2023 17:01:37  INFO [pool-1-thread-7] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 10191941
+09 Mai 2023 17:01:40  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 186000
+09 Mai 2023 17:01:40  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 10262623
+09 Mai 2023 17:06:07  INFO [pool-1-thread-6] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 187000
+09 Mai 2023 17:06:07  INFO [pool-1-thread-6] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 10335845
+09 Mai 2023 17:06:10  INFO [pool-1-thread-8] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 188000
+09 Mai 2023 17:06:10  INFO [pool-1-thread-8] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 10409094
+09 Mai 2023 17:11:27  INFO [pool-1-thread-3] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 189000
+09 Mai 2023 17:11:27  INFO [pool-1-thread-3] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 10479589
+09 Mai 2023 17:11:32  INFO [pool-1-thread-5] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 190000
+09 Mai 2023 17:11:32  INFO [pool-1-thread-5] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 10553150
+09 Mai 2023 17:15:53  INFO [pool-1-thread-4] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 191000
+09 Mai 2023 17:15:53  INFO [pool-1-thread-4] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 10624787
+09 Mai 2023 17:15:57  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 192000
+09 Mai 2023 17:15:57  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 10696205
+09 Mai 2023 17:20:21  INFO [pool-1-thread-1] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 193000
+09 Mai 2023 17:20:21  INFO [pool-1-thread-1] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 10767840
+09 Mai 2023 17:20:23  INFO [pool-1-thread-1] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 194000
+09 Mai 2023 17:20:23  INFO [pool-1-thread-1] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 10839749
+09 Mai 2023 17:24:47  INFO [pool-1-thread-6] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 195000
+09 Mai 2023 17:24:47  INFO [pool-1-thread-6] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 10913551
+09 Mai 2023 17:24:51  INFO [pool-1-thread-3] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 196000
+09 Mai 2023 17:24:51  INFO [pool-1-thread-3] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 10988058
+09 Mai 2023 17:29:03  INFO [pool-1-thread-7] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 197000
+09 Mai 2023 17:29:03  INFO [pool-1-thread-7] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 11063933
+09 Mai 2023 17:29:05  INFO [pool-1-thread-6] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 198000
+09 Mai 2023 17:29:05  INFO [pool-1-thread-6] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 11132995
+09 Mai 2023 17:33:16  INFO [pool-1-thread-3] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 199000
+09 Mai 2023 17:33:16  INFO [pool-1-thread-3] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 11207713
+09 Mai 2023 17:33:18  INFO [pool-1-thread-6] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 200000
+09 Mai 2023 17:33:18  INFO [pool-1-thread-6] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 11278315
+09 Mai 2023 17:33:19  INFO [pool-1-thread-3] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 201000
+09 Mai 2023 17:33:19  INFO [pool-1-thread-3] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 11350193
+09 Mai 2023 17:38:11  INFO [pool-1-thread-3] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 202000
+09 Mai 2023 17:38:11  INFO [pool-1-thread-3] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 11420851
+09 Mai 2023 17:38:14  INFO [pool-1-thread-6] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 203000
+09 Mai 2023 17:38:14  INFO [pool-1-thread-6] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 11495750
+09 Mai 2023 17:42:33  INFO [pool-1-thread-6] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 204000
+09 Mai 2023 17:42:33  INFO [pool-1-thread-6] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 11570201
+09 Mai 2023 17:42:35  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 205000
+09 Mai 2023 17:42:35  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 11640769
+09 Mai 2023 17:46:42  INFO [pool-1-thread-1] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 206000
+09 Mai 2023 17:46:42  INFO [pool-1-thread-1] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 11711905
+09 Mai 2023 17:46:45  INFO [pool-1-thread-3] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 207000
+09 Mai 2023 17:46:45  INFO [pool-1-thread-3] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 11782877
+09 Mai 2023 17:51:14  INFO [pool-1-thread-8] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 208000
+09 Mai 2023 17:51:14  INFO [pool-1-thread-8] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 11857046
+09 Mai 2023 17:51:18  INFO [pool-1-thread-8] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 209000
+09 Mai 2023 17:51:18  INFO [pool-1-thread-8] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 11931096
+09 Mai 2023 17:55:35  INFO [pool-1-thread-3] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 210000
+09 Mai 2023 17:55:35  INFO [pool-1-thread-3] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 12002654
+09 Mai 2023 17:55:39  INFO [pool-1-thread-1] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 211000
+09 Mai 2023 17:55:39  INFO [pool-1-thread-1] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 12072349
+09 Mai 2023 17:59:35  INFO [pool-1-thread-1] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 212000
+09 Mai 2023 17:59:35  INFO [pool-1-thread-1] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 12144810
+09 Mai 2023 17:59:36  INFO [pool-1-thread-1] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 213000
+09 Mai 2023 17:59:36  INFO [pool-1-thread-1] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 12216205
+09 Mai 2023 18:03:40  INFO [pool-1-thread-3] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 214000
+09 Mai 2023 18:03:40  INFO [pool-1-thread-3] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 12288279
+09 Mai 2023 18:03:42  INFO [pool-1-thread-8] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 215000
+09 Mai 2023 18:03:42  INFO [pool-1-thread-8] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 12360215
+09 Mai 2023 18:08:10  INFO [pool-1-thread-6] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 216000
+09 Mai 2023 18:08:10  INFO [pool-1-thread-6] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 12432459
+09 Mai 2023 18:08:13  INFO [pool-1-thread-4] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 217000
+09 Mai 2023 18:08:13  INFO [pool-1-thread-4] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 12508233
+09 Mai 2023 18:12:41  INFO [pool-1-thread-5] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 218000
+09 Mai 2023 18:12:41  INFO [pool-1-thread-5] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 12581053
+09 Mai 2023 18:12:43  INFO [pool-1-thread-7] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 219000
+09 Mai 2023 18:12:43  INFO [pool-1-thread-7] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 12653672
+09 Mai 2023 18:17:00  INFO [pool-1-thread-1] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 220000
+09 Mai 2023 18:17:01  INFO [pool-1-thread-1] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 12720167
+09 Mai 2023 18:17:11  INFO [pool-1-thread-4] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 221000
+09 Mai 2023 18:17:11  INFO [pool-1-thread-4] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 12792271
+09 Mai 2023 18:21:54  INFO [pool-1-thread-8] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 222000
+09 Mai 2023 18:21:54  INFO [pool-1-thread-8] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 12864773
+09 Mai 2023 18:21:57  INFO [pool-1-thread-4] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 223000
+09 Mai 2023 18:21:57  INFO [pool-1-thread-4] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 12935046
+09 Mai 2023 18:22:00  INFO [pool-1-thread-5] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 224000
+09 Mai 2023 18:22:00  INFO [pool-1-thread-5] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 13002993
+09 Mai 2023 18:26:31  INFO [pool-1-thread-4] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 225000
+09 Mai 2023 18:26:31  INFO [pool-1-thread-4] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 13074541
+09 Mai 2023 18:26:34  INFO [pool-1-thread-3] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 226000
+09 Mai 2023 18:26:34  INFO [pool-1-thread-3] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 13148193
+09 Mai 2023 18:30:39  INFO [pool-1-thread-6] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 227000
+09 Mai 2023 18:30:39  INFO [pool-1-thread-6] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 13218517
+09 Mai 2023 18:30:41  INFO [pool-1-thread-8] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 228000
+09 Mai 2023 18:30:42  INFO [pool-1-thread-8] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 13287893
+09 Mai 2023 18:34:53  INFO [pool-1-thread-1] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 229000
+09 Mai 2023 18:34:53  INFO [pool-1-thread-1] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 13360717
+09 Mai 2023 18:34:55  INFO [pool-1-thread-5] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 230000
+09 Mai 2023 18:34:56  INFO [pool-1-thread-5] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 13432466
+09 Mai 2023 18:39:07  INFO [pool-1-thread-3] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 231000
+09 Mai 2023 18:39:07  INFO [pool-1-thread-3] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 13508569
+09 Mai 2023 18:39:11  INFO [pool-1-thread-6] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 232000
+09 Mai 2023 18:39:11  INFO [pool-1-thread-6] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 13580470
+09 Mai 2023 18:43:42  INFO [pool-1-thread-7] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 233000
+09 Mai 2023 18:43:42  INFO [pool-1-thread-7] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 13652444
+09 Mai 2023 18:43:45  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 234000
+09 Mai 2023 18:43:45  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 13724846
+09 Mai 2023 18:48:06  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 235000
+09 Mai 2023 18:48:06  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 13796381
+09 Mai 2023 18:48:10  INFO [pool-1-thread-8] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 236000
+09 Mai 2023 18:48:10  INFO [pool-1-thread-8] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 13868388
+09 Mai 2023 18:52:21  INFO [pool-1-thread-1] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 237000
+09 Mai 2023 18:52:21  INFO [pool-1-thread-1] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 13942388
+09 Mai 2023 18:52:23  INFO [pool-1-thread-8] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 238000
+09 Mai 2023 18:52:23  INFO [pool-1-thread-8] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 14013231
+09 Mai 2023 18:56:53  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 239000
+09 Mai 2023 18:56:53  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 14084024
+09 Mai 2023 18:56:56  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 240000
+09 Mai 2023 18:56:56  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 14156392
+09 Mai 2023 19:01:19  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 241000
+09 Mai 2023 19:01:19  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 14229398
+09 Mai 2023 19:01:21  INFO [pool-1-thread-5] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 242000
+09 Mai 2023 19:01:21  INFO [pool-1-thread-5] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 14300632
+09 Mai 2023 19:01:25  INFO [pool-1-thread-8] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 243000
+09 Mai 2023 19:01:25  INFO [pool-1-thread-8] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 14372825
+09 Mai 2023 19:05:39  INFO [pool-1-thread-1] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 244000
+09 Mai 2023 19:05:40  INFO [pool-1-thread-1] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 14445432
+09 Mai 2023 19:05:43  INFO [pool-1-thread-3] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 245000
+09 Mai 2023 19:05:43  INFO [pool-1-thread-3] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 14520647
+09 Mai 2023 19:09:59  INFO [pool-1-thread-4] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 246000
+09 Mai 2023 19:09:59  INFO [pool-1-thread-4] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 14595311
+09 Mai 2023 19:10:03  INFO [pool-1-thread-8] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 247000
+09 Mai 2023 19:10:03  INFO [pool-1-thread-8] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 14666592
+09 Mai 2023 19:14:52  INFO [pool-1-thread-6] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 248000
+09 Mai 2023 19:14:52  INFO [pool-1-thread-6] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 14740639
+09 Mai 2023 19:14:55  INFO [pool-1-thread-1] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 249000
+09 Mai 2023 19:14:55  INFO [pool-1-thread-1] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 14810966
+09 Mai 2023 19:19:31  INFO [pool-1-thread-6] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 250000
+09 Mai 2023 19:19:31  INFO [pool-1-thread-6] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 14883135
+09 Mai 2023 19:19:34  INFO [pool-1-thread-7] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 251000
+09 Mai 2023 19:19:34  INFO [pool-1-thread-7] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 14952800
+09 Mai 2023 19:23:53  INFO [pool-1-thread-6] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 252000
+09 Mai 2023 19:23:53  INFO [pool-1-thread-6] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 15028604
+09 Mai 2023 19:23:56  INFO [pool-1-thread-3] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 253000
+09 Mai 2023 19:23:56  INFO [pool-1-thread-3] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 15100860
+09 Mai 2023 19:28:11  INFO [pool-1-thread-7] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 254000
+09 Mai 2023 19:28:11  INFO [pool-1-thread-7] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 15174306
+09 Mai 2023 19:28:14  INFO [pool-1-thread-1] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 255000
+09 Mai 2023 19:28:14  INFO [pool-1-thread-1] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 15249244
+09 Mai 2023 19:32:42  INFO [pool-1-thread-6] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 256000
+09 Mai 2023 19:32:42  INFO [pool-1-thread-6] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 15323947
+09 Mai 2023 19:32:45  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 257000
+09 Mai 2023 19:32:45  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 15395914
+09 Mai 2023 19:37:08  INFO [pool-1-thread-8] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 258000
+09 Mai 2023 19:37:08  INFO [pool-1-thread-8] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 15469227
+09 Mai 2023 19:37:10  INFO [pool-1-thread-2] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 259000
+09 Mai 2023 19:37:10  INFO [pool-1-thread-2] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 15541933
+09 Mai 2023 19:41:38  INFO [pool-1-thread-7] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 260000
+09 Mai 2023 19:41:39  INFO [pool-1-thread-7] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 15615372
+09 Mai 2023 19:41:42  INFO [pool-1-thread-5] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 261000
+09 Mai 2023 19:41:42  INFO [pool-1-thread-5] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 15687392
+09 Mai 2023 19:46:26  INFO [pool-1-thread-6] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 262000
+09 Mai 2023 19:46:26  INFO [pool-1-thread-6] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 15759796
+09 Mai 2023 19:46:28  INFO [pool-1-thread-8] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 263000
+09 Mai 2023 19:46:28  INFO [pool-1-thread-8] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 15830229
+09 Mai 2023 19:46:31  INFO [pool-1-thread-8] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 264000
+09 Mai 2023 19:51:32  INFO [pool-1-thread-8] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 15901245
+09 Mai 2023 19:51:39  INFO [pool-1-thread-5] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 265000
+09 Mai 2023 19:51:39  INFO [pool-1-thread-5] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 15973816
+09 Mai 2023 19:51:43  INFO [pool-1-thread-7] (WalkGenerationManager.java:426) - TOTAL PROCESSED ENTITIES: 266000
+09 Mai 2023 19:51:43  INFO [pool-1-thread-7] (WalkGenerationManager.java:427) - TOTAL NUMBER OF PATHS : 16046006

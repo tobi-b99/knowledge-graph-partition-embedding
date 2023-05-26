@@ -1,0 +1,5 @@
+task_name,gold_standard_file,coverage,model_name,model_configuration,num_clusters,adjusted_rand_index,adjusted_mutual_info_score,homogeneity_score,completeness_score,v_measure_score,normalized_mutual_info_score,clustering_accuracy
+Clustering,citiesAndCountries_cluster,0.9924651513248776,DBSCAN,metric=cosine,3,0.010513660734776,0.003042672075205,0.001713763544633,0.019954097247594,0.00315643567742,0.00315643567742,0.782724266398761
+Clustering,citiesAndCountries_cluster,0.9924651513248776,KMeans,"metric=enclidean, n_clusters=2",2,0.057781675397013,0.009247440714011,0.009071349115462,0.009515599584441,0.009288165289213,0.009288165289213,0.71095483276822
+Clustering,citiesAndCountries_cluster,0.9924651513248776,Agglomerative clustering,"metric=cosine, n_clusters=2",2,0.018525863647247,0.002135045101771,0.002220563721578,0.002129865369945,0.002174269099828,0.002174269099828,0.673364309933442
+Clustering,citiesAndCountries_cluster,0.9924651513248776,Ward hierarchical clustering,"metric=cosine, n_clusters=2",2,0.039002998898156,0.005883365556787,0.006358187595588,0.00553923793057,0.005920526894113,0.005920526894113,0.664887605173929

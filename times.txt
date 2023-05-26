@@ -1,0 +1,70 @@
+Complete: (maybe again with nq instead of ttl file?)
+- walk: 40min 14s
+- embedding: 15h 5min 1s
+- evaluation: 4h 25min 58.5s
+
+Horizontal:
+- partition (+ encoding in chunks + statistics): 8min 6s (1h 34min 17s)
+- chunkTranslator: 5min 41s
+- walk: 6min 45s (total, with decompressed files)
+- embedding: 2h 7min 26s (total)
+    0) 12min 55s
+    1) 13min 57s
+    2) 12min 59s
+    3) 12min 15s
+    4) 12min 5s
+    5) 10min 35s
+    6) 12min 25s
+    7) 13min 9s
+    8) 12min 5s
+    9) 15min 1s
+- combining the embeddings: 5min 6.7s
+- evaluation: 11h 41min 3.7s (total)
+    - classification:
+    - regression:
+    - clustering:
+    - entity relatedness:
+    - document similarity:
+    - semantic analogies:
+
+Min Edge Cut:
+- partition (+ encoding in chunks + statistics): 33min 35s (51min 4s)
+- chunkTranslator: 5min 17s
+- walk:  6min 30.2 (total, with decompressed files)
+- embedding:  2h 12min 29s (total)
+    0) 12min 44s
+    1) 12min 37s
+    2) 19min 9s
+    3) 12min 48s
+    4) 10min 59s
+    5) 13min 23s
+    6) 12min 27s
+    7) 13min 3s
+    8) 13min 47s
+    9) 11min 32s
+- combining the embeddings: 4min 34.1s
+- evaluation: (total)
+    - classification: 2h 29min 7.4s
+    - regression: 42min 58.5s
+    - clustering: 49min 29.8s
+    - entity relatedness: -
+    - document similarity: 1h 21min 29.2s
+    - semantic analogies: 
+
+(Subject:)
+- partition (+ encoding in chunks + statistics): 8min 16s (1h 13min 32s)
+- chunkTranslator: 7min 48s
+- walk: 5min 13.6s (total, with decompressed files)
+- embedding: 2h 1min 13s (total)
+    0) 12min 11s
+    1) 11min 44s
+    2) 13min 44s
+    3) 12min 40s
+    4) 11min 32s
+    5) 11min 42s
+    6) 11min 48s
+    7) 12min 30s
+    8) 11min 18s
+    9) 11min 47s
+- combining the embeddings: 2min 33s
+- evaluation: failing with last classification
