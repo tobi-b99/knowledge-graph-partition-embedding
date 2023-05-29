@@ -18,8 +18,8 @@ Horizontal:
     7) 13min 9s
     8) 12min 5s
     9) 15min 1s
-- combining the embeddings: 5min 6.7s
-- evaluation: 11h 41min 3.7s (total)
+- combining the embeddings: 3min 50.8s (without removing duplicates: 3min 45.7s)
+- evaluation: 7h 30min 32.6s (total, without removing duplicates: 11h 41min 3.7s)
     - classification:
     - regression:
     - clustering:
@@ -42,7 +42,7 @@ Min Edge Cut:
     7) 13min 3s
     8) 13min 47s
     9) 11min 32s
-- combining the embeddings: 4min 34.1s
+- combining the embeddings: 2min 11.1s (without removing duplicates: 5min 2.1s)
 - evaluation: (total)
     - classification: 2h 29min 7.4s
     - regression: 42min 58.5s
