@@ -6,7 +6,6 @@ from os.path import join
 
 import requests
 import tqdm
-from rdflib import Graph
 
 
 def get_all_data(datasets: list = None, path: str = "data"):
@@ -97,26 +96,8 @@ def decompress(path: str = None):
         print("Unexpected filetype ecountered. gz- or bz2-file was expected.")
 
 
-def import_ttl(paths: list = None, g: Graph = None):
-    ''' Combines ttl-files into one (big) ttl-file.
-    
-    Args:
-        paths (list): paths to the ttl files that are to be combined.
-        
-    Returns:
-        none
-        
-    '''
-    assert paths is not None, "No paths given, please give a list with at least one path."
-    assert Graph is not None, "No Graph given, please specify one."
-    
-    print("Importing...")
-    for p in paths:
-        g.parse(p, format="ttl")
-        print(p, "imported.")
 
-
-def combine_vectors(file_regex: str = None, outpath: str = None):
+def combine_vectors(file_regex: str = None, outpath: str = None, duplicates: bool = True):
     ''' Concatenates txt files in a new vectors.txt file.
     
     Args:
@@ -134,12 +115,21 @@ def combine_vectors(file_regex: str = None, outpath: str = None):
     print
     if not os.path.exists(output_folder):
         os.mkdir(output_folder)
+
+    entities = set()
     
     with open(outpath, "w") as outfile:
         for file in glob.glob(file_regex):
             with open(file, "r") as infile:
                 for line in infile:
-                    outfile.write(line)
+                    if duplicates:
+                        outfile.write(line)
+                    else:
+                        e = line.split(' ', 1)[0]
+                        if(e not in entities):
+                            entities.add(e)
+                            outfile.write(line)
+                         
 
 
 def write_embedded_file(file_type: str = "txt", file_name: str = None, entities: list = None, embeddings: list = None):
