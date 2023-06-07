@@ -1,23 +1,25 @@
-Complete: (maybe again with nq instead of ttl file?)
-- walk: 40min 14s
-- embedding: 15h 5min 1s
-- evaluation: 4h 25min 58.5s
+Complete:
+- switching format to nq (+ encoding in chunks + statistics): 14min 23s (33min 19s)
+- chunkTranslator: 5min 32s
+- walk: 44min 42s (40min 14s, ttl in brackets)
+- embedding: 13h 12min 48s (15h 5min 1s)
+- evaluation: 4h 16min 13.4s (4h 25min 58.5s)
 
 Horizontal:
 - partition (+ encoding in chunks + statistics): 8min 6s (1h 34min 17s)
 - chunkTranslator: 5min 41s
 - walk: 6min 45s (total, with decompressed files)
-- embedding: 2h 7min 26s (total)
-    0) 12min 55s
-    1) 13min 57s
-    2) 12min 59s
-    3) 12min 15s
-    4) 12min 5s
-    5) 10min 35s
-    6) 12min 25s
-    7) 13min 9s
-    8) 12min 5s
-    9) 15min 1s
+- embedding:  (total, embedText in brackets: 2h 7min 26s)
+    0) 7min 32s (12min 55s)
+    1) 13min 19s (13min 57s)
+    2) 11min 59s (12min 59s)
+    3) 11min 18s (12min 15s)
+    4) 11min 31s (12min 5s)
+    5) 10min 4s (10min 35s)
+    6) 12min 1s (12min 25s)
+    7) 13min 0s (13min 9s)
+    8) 11min 1s (12min 5s)
+    9) 13min 43s (15min 1s)
 - combining the embeddings: 3min 50.8s (without removing duplicates: 3min 45.7s)
 - evaluation: 7h 30min 32.6s (total, without removing duplicates: 11h 41min 3.7s)
     - classification:
