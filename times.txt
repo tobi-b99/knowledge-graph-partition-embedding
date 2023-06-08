@@ -9,7 +9,7 @@ Horizontal:
 - partition (+ encoding in chunks + statistics): 8min 6s (1h 34min 17s)
 - chunkTranslator: 5min 41s
 - walk: 6min 45s (total, with decompressed files)
-- embedding:  (total, embedText in brackets: 2h 7min 26s)
+- embedding: 1h 55min 28s (total, embedText in brackets: 2h 7min 26s)
     0) 7min 32s (12min 55s)
     1) 13min 19s (13min 57s)
     2) 11min 59s (12min 59s)
@@ -20,8 +20,8 @@ Horizontal:
     7) 13min 0s (13min 9s)
     8) 11min 1s (12min 5s)
     9) 13min 43s (15min 1s)
-- combining the embeddings: 3min 50.8s (without removing duplicates: 3min 45.7s)
-- evaluation: 7h 30min 32.6s (total, without removing duplicates: 11h 41min 3.7s)
+- combining the embeddings: 3min 27.5s (with embedText: 3min 50.8s, without removing duplicates: 3min 45.7s)
+- evaluation: 6h 39min 6.2s (total, with embedText: 7h 30min 32.6s, without removing duplicates: 11h 41min 3.7s)
     - classification:
     - regression:
     - clustering:
@@ -33,17 +33,17 @@ Min Edge Cut:
 - partition (+ encoding in chunks + statistics): 33min 35s (51min 4s)
 - chunkTranslator: 5min 17s
 - walk:  6min 30.2 (total, with decompressed files)
-- embedding:  2h 12min 29s (total)
-    0) 12min 44s
-    1) 12min 37s
-    2) 19min 9s
-    3) 12min 48s
-    4) 10min 59s
-    5) 13min 23s
-    6) 12min 27s
-    7) 13min 3s
-    8) 13min 47s
-    9) 11min 32s
+- embedding:  (total, embedText in brackets: 2h 12min 29s)
+    0) 12min 33s (12min 44s)
+    1) 12min 41s (12min 37s)
+    2) 17min 30s(19min 9s)
+    3) 13min 11s (12min 48s)
+    4) 10min 11s (10min 59s)
+    5) 12min 21s (13min 23s)
+    6) 11min 36s (12min 27s)
+    7) 12min 14s (13min 3s)
+    8) 13min 2s (13min 47s)
+    9) (11min 32s)
 - combining the embeddings: 2min 11.1s (without removing duplicates: 5min 2.1s)
 - evaluation: 6h 15min 8.7s (total, without removing duplicates: sum below)
     - classification: 2h 29min 7.4s
@@ -52,21 +52,4 @@ Min Edge Cut:
     - entity relatedness: -
     - document similarity: 1h 21min 29.2s
     - semantic analogies: 
-
-(Subject:)
-- partition (+ encoding in chunks + statistics): 8min 16s (1h 13min 32s)
-- chunkTranslator: 7min 48s
-- walk: 5min 13.6s (total, with decompressed files)
-- embedding: 2h 1min 13s (total)
-    0) 12min 11s
-    1) 11min 44s
-    2) 13min 44s
-    3) 12min 40s
-    4) 11min 32s
-    5) 11min 42s
-    6) 11min 48s
-    7) 12min 30s
-    8) 11min 18s
-    9) 11min 47s
-- combining the embeddings: 2min 33s
-- evaluation: failing with last classification
+    
