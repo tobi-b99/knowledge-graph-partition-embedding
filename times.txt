@@ -22,12 +22,6 @@ Horizontal:
     9) 13min 43s (15min 1s)
 - combining the embeddings: 3min 27.5s (with embedText: 3min 50.8s, without removing duplicates: 3min 45.7s)
 - evaluation: 6h 39min 6.2s (total, with embedText: 7h 30min 32.6s, without removing duplicates: 11h 41min 3.7s)
-    - classification:
-    - regression:
-    - clustering:
-    - entity relatedness:
-    - document similarity:
-    - semantic analogies:
 
 Min Edge Cut:
 - partition (+ encoding in chunks + statistics): 33min 35s (51min 4s)
@@ -45,11 +39,6 @@ Min Edge Cut:
     8) 13min 2s (13min 47s)
     9) (11min 32s)
 - combining the embeddings: 2min 11.1s (without removing duplicates: 5min 2.1s)
-- evaluation: 6h 15min 8.7s (total, without removing duplicates: sum below)
+- evaluation: 7h 10min 20.4s (total, with embedText: 6h 15min 8.7s, without removing duplicates: failed partially)
     - classification: 2h 29min 7.4s
-    - regression: 42min 58.5s
-    - clustering: 49min 29.8s
-    - entity relatedness: -
-    - document similarity: 1h 21min 29.2s
-    - semantic analogies: 
     
