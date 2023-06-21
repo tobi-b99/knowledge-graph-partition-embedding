@@ -96,13 +96,13 @@ def decompress(path: str = None):
         print("Unexpected filetype ecountered. gz- or bz2-file was expected.")
 
 
-
 def combine_vectors(file_regex: str = None, outpath: str = None, duplicates: bool = True):
-    ''' Concatenates txt files in a new vectors.txt file.
+    ''' Concatenates txt files in a folder in a new vectors.txt file.
     
     Args:
         file_regex (str): the path to the files to combine, can contain wildcards.
         outpath (str): path to a file that the result is to be output in.
+        duplicates (bool): should duplicates be kept?
         
     Returns:
         none
@@ -112,7 +112,6 @@ def combine_vectors(file_regex: str = None, outpath: str = None, duplicates: boo
     assert outpath is not None, "No path to output files given, please specify."
 
     output_folder = os.path.dirname(outpath)
-    print
     if not os.path.exists(output_folder):
         os.mkdir(output_folder)
 
@@ -131,6 +130,43 @@ def combine_vectors(file_regex: str = None, outpath: str = None, duplicates: boo
                             outfile.write(line)
                          
 
+def combine_aligned_vectors(aligned_regex: str = None, target_file: str = None, outpath: str = None, duplicates: bool = True):
+    ''' Concatenates aligned txt files in a folder and their target file in a new vectors.txt file.
+    
+    Args:
+        aligned_regex (str): the path to the files to combine, can contain wildcards.
+        target_file (str): the path to the target file. Will always be put in first place of the new file.
+        outpath (str): path to a file that the result is to be output in.
+        duplicates (bool): should duplicates be kept?
+        
+    Returns:
+        none
+        
+    '''
+    assert aligned_regex is not None, "No path to the files given, please specify."
+    assert target_file is not None, "No path to the target file given, please specify."
+    assert outpath is not None, "No path to output files given, please specify."
+
+    output_folder = os.path.dirname(outpath)
+    if not os.path.exists(output_folder):
+        os.mkdir(output_folder)
+
+    entities = set()
+    files = glob.glob(aligned_regex)
+    files.insert(0, glob.glob(target_file)[0])
+    
+    with open(outpath, "w") as outfile:
+        for file in files:
+            with open(file, "r") as infile:
+                for line in infile:
+                    if duplicates:
+                        outfile.write(line)
+                    else:
+                        e = line.split(' ', 1)[0]
+                        if(e not in entities):
+                            entities.add(e)
+                            outfile.write(line)
+                         
 
 def write_embedded_file(file_type: str = "txt", file_name: str = None, entities: list = None, embeddings: list = None):
     ''' Writes embeddings and entities in a file in a way that GEval can read.

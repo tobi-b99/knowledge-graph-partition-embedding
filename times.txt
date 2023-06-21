@@ -21,6 +21,8 @@ Horizontal:
     8) 11min 1s (12min 5s)
     9) 13min 43s (15min 1s)
 - combining the embeddings: 3min 27.5s (with embedText: 3min 50.8s, without removing duplicates: 3min 45.7s)
+- rotatating the vectors to align them (check which holds most of the needed entities and use that to align the others to)
+    - aligned to 0th partition: 42min 9.5s
 - evaluation: 6h 39min 6.2s (total, with embedText: 7h 30min 32.6s, without removing duplicates: 11h 41min 3.7s)
 
 Min Edge Cut:
