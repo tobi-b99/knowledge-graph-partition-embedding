@@ -2,8 +2,11 @@ import bz2
 import glob
 import gzip
 import os
-from os.path import join
+from os.path import dirname, join, basename
 
+import evaluation_framework as geval
+from evaluation_framework.txt_dataManager import DocumentSimilarityDataManager, SemanticAnalogiesDataManager
+import pandas as pd
 import requests
 import tqdm
 
@@ -167,8 +170,66 @@ def combine_aligned_vectors(aligned_regex: str = None, target_file: str = None, 
                             entities.add(e)
                             outfile.write(line)
                          
+def filter_vector_file(vector_file: str = None, outpath: str = None):
+    ''' Filters the entities out of the vector file that are not used by GEval.
+    
+    Args:
+        vector_file (str): the vector file to be filtered.
+        outpath (str): the new vector file name that should be used.
+    Returns:
+        none
+        
+    '''
+    assert vector_file is not None, "No vector file path given, please specify."
+    assert outpath is not None, "No output file given, please specify."
 
-def write_embedded_file(file_type: str = "txt", file_name: str = None, entities: list = None, embeddings: list = None):
+    geval_path = dirname(geval.__file__)
+    filtered_entities = set()
+
+    output_folder = os.path.dirname(outpath)
+    if not os.path.exists(output_folder):
+        os.mkdir(output_folder)
+
+    # Classification
+    for file in glob.glob(join(geval_path, "Classification", "data", "*.tsv")):
+        df = pd.read_csv(file, usecols=["DBpedia_URI15"], delim_whitespace=True)
+        filtered_entities.update(set(df.iloc[:, 0]))
+
+    # Clustering
+    for file in glob.glob(join(geval_path, "Clustering", "data", "*.tsv")):
+        df = pd.read_csv(file, usecols=["DBpedia_URI"], delim_whitespace=True)
+        filtered_entities.update(set(df.iloc[:, 0]))
+
+    # Regression
+    for file in glob.glob(join(geval_path, "Regression", "data", "*.tsv")):
+        df = pd.read_csv(file, usecols=["DBpedia_URI15"], delim_whitespace=True)
+        filtered_entities.update(set(df.iloc[:, 0]))
+
+    # DocumentSimilarity
+    dsm = DocumentSimilarityDataManager(debugging_mode=False)
+    filtered_entities.update(set(dsm.get_entities(filename=join(geval_path, "DocumentSimilarity", "data", "LP50_entities.json")).iloc[:, 0]))
+
+    # EntityRelatedness
+    with open(join(geval_path, "EntityRelatedness", "data", "KORE.txt"), "r") as file:
+        for line in file:
+            filtered_entities.add(line)
+
+    # SemanticAnalogies
+    for file in glob.glob(join(geval_path, "SemanticAnalogies", "data", "*.txt")):
+        with open(file, "r") as f:
+            for line in f:
+                filtered_entities.update(set(line.rstrip().split()))
+
+    # filter and write new vector file
+    with open(outpath, "w") as outfile:
+        with open(vector_file, "r") as infile:
+            for line in infile:
+                e = line.split(' ', 1)[0]
+                if e in filtered_entities:
+                    outfile.write(line)
+
+
+def write_vector_file(file_type: str = "txt", file_name: str = None, entities: list = None, embeddings: list = None):
     ''' Writes embeddings and entities in a file in a way that GEval can read.
     
     Args:
