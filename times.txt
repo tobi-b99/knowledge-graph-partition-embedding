@@ -20,10 +20,10 @@ Horizontal:
     7) 13min 0s (13min 9s)
     8) 11min 1s (12min 5s)
     9) 13min 43s (15min 1s)
-- combining the embeddings: 3min 27.5s (with embedText: 3min 50.8s, without removing duplicates: 3min 45.7s)
 - rotatating the vectors to align them (check which holds most of the needed entities and use that to align the others to)
-    - aligned to 0th partition: 42min 9.5s -> filtering: 43.8s -> evaluation: 9min 52s
-- evaluation: 6h 39min 6.2s (total, with embedText: 7h 30min 32.6s, without removing duplicates: 11h 41min 3.7s)
+    - aligned to 0th partition: 42min 9.5s -> filtering: 43.8s
+- combining the embeddings: 3min 27.5s (with embedText: 3min 50.8s, without removing duplicates: 3min 45.7s, for the aligned partitions: 5min 23.5s)
+- evaluation: 6h 39min 6.2s (total, with embedText: 7h 30min 32.6s, without removing duplicates: 11h 41min 3.7s, for the aligned partitions: 9min 52s)
 
 Min Edge Cut:
 - partition (+ encoding in chunks + statistics): 33min 35s (51min 4s)
@@ -40,7 +40,8 @@ Min Edge Cut:
     7) 12min 14s (13min 3s)
     8) 13min 2s (13min 47s)
     9) (11min 32s)
-- combining the embeddings: 2min 11.1s (without removing duplicates: 5min 2.1s)
-- evaluation: 7h 10min 20.4s (total, with embedText: 6h 15min 8.7s, without removing duplicates: failed partially)
-    - classification: 2h 29min 7.4s
+- rotatating the vectors to align them (check which holds most of the needed entities and use that to align the others to)
+    - aligned to 0th partition: 46min 33.9s -> filtering: 41.2s
+- combining the embeddings: 2min 11.1s (without removing duplicates: 5min 2.1s, for the aligned partitions: 6min 21.8)
+- evaluation: 7h 10min 20.4s (total, with embedText: 6h 15min 8.7s, without removing duplicates: failed partially, for the aligned partitions: 9min 38.4s)
     

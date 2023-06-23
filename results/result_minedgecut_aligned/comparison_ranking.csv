@@ -1,0 +1,189 @@
+task_name gold_standard_file model model_configuration metric ranking absolute_total relative_total
+Classification Cities NB - accuracy 6 10 10
+Classification Cities KNN K=3 accuracy 5 10 10
+Classification Cities C45 - accuracy 7 10 10
+Classification Cities SVM C=0.001 accuracy 0 10 4
+Classification Cities SVM C=0.01 accuracy 0 10 4
+Classification Cities SVM C=0.1 accuracy 1 10 4
+Classification Cities SVM C=1.0 accuracy 3 10 10
+Classification Cities SVM C=10.0 accuracy 5 10 10
+Classification Cities SVM C=100 accuracy 2 10 10
+Classification Cities SVM C=1000 accuracy 2 10 10
+Classification MetacriticMovies NB - accuracy 2 10 10
+Classification MetacriticMovies KNN K=3 accuracy 3 10 10
+Classification MetacriticMovies C45 - accuracy 7 10 10
+Classification MetacriticMovies SVM C=0.001 accuracy 3 10 5
+Classification MetacriticMovies SVM C=0.01 accuracy 3 10 5
+Classification MetacriticMovies SVM C=0.1 accuracy 2 10 10
+Classification MetacriticMovies SVM C=1.0 accuracy 2 10 10
+Classification MetacriticMovies SVM C=10.0 accuracy 3 10 10
+Classification MetacriticMovies SVM C=100 accuracy 4 10 10
+Classification MetacriticMovies SVM C=1000 accuracy 3 10 10
+Classification MetacriticAlbums NB - accuracy 9 10 10
+Classification MetacriticAlbums KNN K=3 accuracy 3 10 10
+Classification MetacriticAlbums C45 - accuracy 3 10 10
+Classification MetacriticAlbums SVM C=0.001 accuracy 2 10 6
+Classification MetacriticAlbums SVM C=0.01 accuracy 2 10 6
+Classification MetacriticAlbums SVM C=0.1 accuracy 2 10 6
+Classification MetacriticAlbums SVM C=1.0 accuracy 2 10 10
+Classification MetacriticAlbums SVM C=10.0 accuracy 5 10 10
+Classification MetacriticAlbums SVM C=100 accuracy 5 10 10
+Classification MetacriticAlbums SVM C=1000 accuracy 2 10 10
+Classification AAUP NB - accuracy 4 10 10
+Classification AAUP KNN K=3 accuracy 3 10 10
+Classification AAUP C45 - accuracy 4 10 10
+Classification AAUP SVM C=0.001 accuracy 4 10 5
+Classification AAUP SVM C=0.01 accuracy 4 10 5
+Classification AAUP SVM C=0.1 accuracy 5 10 10
+Classification AAUP SVM C=1.0 accuracy 8 10 10
+Classification AAUP SVM C=10.0 accuracy 6 10 10
+Classification AAUP SVM C=100 accuracy 4 10 10
+Classification AAUP SVM C=1000 accuracy 8 10 10
+Classification Forbes NB - accuracy 5 10 10
+Classification Forbes KNN K=3 accuracy 6 10 10
+Classification Forbes C45 - accuracy 4 10 10
+Classification Forbes SVM C=0.001 accuracy 8 10 8
+Classification Forbes SVM C=0.01 accuracy 8 10 8
+Classification Forbes SVM C=0.1 accuracy 9 10 10
+Classification Forbes SVM C=1.0 accuracy 9 10 10
+Classification Forbes SVM C=10.0 accuracy 9 10 10
+Classification Forbes SVM C=100 accuracy 9 10 10
+Classification Forbes SVM C=1000 accuracy 7 10 10
+Regression Cities LR - root_mean_squared_error 7 10 10
+Regression Cities KNN K=3 root_mean_squared_error 7 10 10
+Regression Cities M5 - root_mean_squared_error 5 10 10
+Regression MetacriticMovies LR - root_mean_squared_error 4 10 10
+Regression MetacriticMovies KNN K=3 root_mean_squared_error 6 10 10
+Regression MetacriticMovies M5 - root_mean_squared_error 5 10 10
+Regression MetacriticAlbums LR - root_mean_squared_error 4 10 10
+Regression MetacriticAlbums KNN K=3 root_mean_squared_error 3 10 10
+Regression MetacriticAlbums M5 - root_mean_squared_error 5 10 10
+Regression AAUP LR - root_mean_squared_error 3 10 10
+Regression AAUP KNN K=3 root_mean_squared_error 2 10 10
+Regression AAUP M5 - root_mean_squared_error 2 10 10
+Regression Forbes LR - root_mean_squared_error 4 10 10
+Regression Forbes KNN K=3 root_mean_squared_error 2 10 10
+Regression Forbes M5 - root_mean_squared_error 5 10 10
+Clustering citiesAndCountries_cluster DBSCAN metric=cosine adjusted_rand_index 6 10 10
+Clustering citiesAndCountries_cluster DBSCAN metric=cosine adjusted_mutual_info_score 6 10 10
+Clustering citiesAndCountries_cluster DBSCAN metric=cosine homogeneity_score 3 10 10
+Clustering citiesAndCountries_cluster DBSCAN metric=cosine completeness_score 3 10 10
+Clustering citiesAndCountries_cluster DBSCAN metric=cosine v_measure_score 3 10 10
+Clustering citiesAndCountries_cluster DBSCAN metric=cosine normalized_mutual_info_score 3 10 10
+Clustering citiesAndCountries_cluster DBSCAN metric=cosine clustering_accuracy 5 10 9
+Clustering citiesAndCountries_cluster KMeans "metric=enclidean, n_clusters=2" adjusted_rand_index 5 10 10
+Clustering citiesAndCountries_cluster KMeans "metric=enclidean, n_clusters=2" adjusted_mutual_info_score 7 10 10
+Clustering citiesAndCountries_cluster KMeans "metric=enclidean, n_clusters=2" homogeneity_score 7 10 10
+Clustering citiesAndCountries_cluster KMeans "metric=enclidean, n_clusters=2" completeness_score 7 10 10
+Clustering citiesAndCountries_cluster KMeans "metric=enclidean, n_clusters=2" v_measure_score 7 10 10
+Clustering citiesAndCountries_cluster KMeans "metric=enclidean, n_clusters=2" normalized_mutual_info_score 7 10 10
+Clustering citiesAndCountries_cluster KMeans "metric=enclidean, n_clusters=2" clustering_accuracy 6 10 10
+Clustering citiesAndCountries_cluster "Agglomerative clustering" "metric=cosine, n_clusters=2" adjusted_rand_index 2 10 10
+Clustering citiesAndCountries_cluster "Agglomerative clustering" "metric=cosine, n_clusters=2" adjusted_mutual_info_score 2 10 10
+Clustering citiesAndCountries_cluster "Agglomerative clustering" "metric=cosine, n_clusters=2" homogeneity_score 2 10 10
+Clustering citiesAndCountries_cluster "Agglomerative clustering" "metric=cosine, n_clusters=2" completeness_score 2 10 10
+Clustering citiesAndCountries_cluster "Agglomerative clustering" "metric=cosine, n_clusters=2" v_measure_score 2 10 10
+Clustering citiesAndCountries_cluster "Agglomerative clustering" "metric=cosine, n_clusters=2" normalized_mutual_info_score 2 10 10
+Clustering citiesAndCountries_cluster "Agglomerative clustering" "metric=cosine, n_clusters=2" clustering_accuracy 4 10 10
+Clustering citiesAndCountries_cluster "Ward hierarchical clustering" "metric=cosine, n_clusters=2" adjusted_rand_index 3 10 10
+Clustering citiesAndCountries_cluster "Ward hierarchical clustering" "metric=cosine, n_clusters=2" adjusted_mutual_info_score 6 10 10
+Clustering citiesAndCountries_cluster "Ward hierarchical clustering" "metric=cosine, n_clusters=2" homogeneity_score 6 10 10
+Clustering citiesAndCountries_cluster "Ward hierarchical clustering" "metric=cosine, n_clusters=2" completeness_score 5 10 10
+Clustering citiesAndCountries_cluster "Ward hierarchical clustering" "metric=cosine, n_clusters=2" v_measure_score 6 10 10
+Clustering citiesAndCountries_cluster "Ward hierarchical clustering" "metric=cosine, n_clusters=2" normalized_mutual_info_score 6 10 10
+Clustering citiesAndCountries_cluster "Ward hierarchical clustering" "metric=cosine, n_clusters=2" clustering_accuracy 3 10 10
+Clustering cities2000AndCountries_cluster DBSCAN metric=cosine adjusted_rand_index 4 10 10
+Clustering cities2000AndCountries_cluster DBSCAN metric=cosine adjusted_mutual_info_score 4 10 10
+Clustering cities2000AndCountries_cluster DBSCAN metric=cosine homogeneity_score 2 10 10
+Clustering cities2000AndCountries_cluster DBSCAN metric=cosine completeness_score 2 10 10
+Clustering cities2000AndCountries_cluster DBSCAN metric=cosine v_measure_score 2 10 10
+Clustering cities2000AndCountries_cluster DBSCAN metric=cosine normalized_mutual_info_score 2 10 10
+Clustering cities2000AndCountries_cluster DBSCAN metric=cosine clustering_accuracy 7 10 10
+Clustering cities2000AndCountries_cluster KMeans "metric=enclidean, n_clusters=2" adjusted_rand_index 7 10 10
+Clustering cities2000AndCountries_cluster KMeans "metric=enclidean, n_clusters=2" adjusted_mutual_info_score 7 10 10
+Clustering cities2000AndCountries_cluster KMeans "metric=enclidean, n_clusters=2" homogeneity_score 7 10 10
+Clustering cities2000AndCountries_cluster KMeans "metric=enclidean, n_clusters=2" completeness_score 7 10 10
+Clustering cities2000AndCountries_cluster KMeans "metric=enclidean, n_clusters=2" v_measure_score 7 10 10
+Clustering cities2000AndCountries_cluster KMeans "metric=enclidean, n_clusters=2" normalized_mutual_info_score 7 10 10
+Clustering cities2000AndCountries_cluster KMeans "metric=enclidean, n_clusters=2" clustering_accuracy 8 10 10
+Clustering cities2000AndCountries_cluster "Agglomerative clustering" "metric=cosine, n_clusters=2" adjusted_rand_index 2 10 10
+Clustering cities2000AndCountries_cluster "Agglomerative clustering" "metric=cosine, n_clusters=2" adjusted_mutual_info_score 3 10 10
+Clustering cities2000AndCountries_cluster "Agglomerative clustering" "metric=cosine, n_clusters=2" homogeneity_score 2 10 10
+Clustering cities2000AndCountries_cluster "Agglomerative clustering" "metric=cosine, n_clusters=2" completeness_score 4 10 10
+Clustering cities2000AndCountries_cluster "Agglomerative clustering" "metric=cosine, n_clusters=2" v_measure_score 3 10 10
+Clustering cities2000AndCountries_cluster "Agglomerative clustering" "metric=cosine, n_clusters=2" normalized_mutual_info_score 3 10 10
+Clustering cities2000AndCountries_cluster "Agglomerative clustering" "metric=cosine, n_clusters=2" clustering_accuracy 3 10 10
+Clustering cities2000AndCountries_cluster "Ward hierarchical clustering" "metric=cosine, n_clusters=2" adjusted_rand_index 8 10 10
+Clustering cities2000AndCountries_cluster "Ward hierarchical clustering" "metric=cosine, n_clusters=2" adjusted_mutual_info_score 9 10 10
+Clustering cities2000AndCountries_cluster "Ward hierarchical clustering" "metric=cosine, n_clusters=2" homogeneity_score 9 10 10
+Clustering cities2000AndCountries_cluster "Ward hierarchical clustering" "metric=cosine, n_clusters=2" completeness_score 8 10 10
+Clustering cities2000AndCountries_cluster "Ward hierarchical clustering" "metric=cosine, n_clusters=2" v_measure_score 9 10 10
+Clustering cities2000AndCountries_cluster "Ward hierarchical clustering" "metric=cosine, n_clusters=2" normalized_mutual_info_score 9 10 10
+Clustering cities2000AndCountries_cluster "Ward hierarchical clustering" "metric=cosine, n_clusters=2" clustering_accuracy 8 10 10
+Clustering citiesMoviesAlbumsCompaniesUni_cluster DBSCAN metric=cosine adjusted_rand_index 2 10 10
+Clustering citiesMoviesAlbumsCompaniesUni_cluster DBSCAN metric=cosine adjusted_mutual_info_score 2 10 10
+Clustering citiesMoviesAlbumsCompaniesUni_cluster DBSCAN metric=cosine homogeneity_score 2 10 10
+Clustering citiesMoviesAlbumsCompaniesUni_cluster DBSCAN metric=cosine completeness_score 6 10 10
+Clustering citiesMoviesAlbumsCompaniesUni_cluster DBSCAN metric=cosine v_measure_score 2 10 10
+Clustering citiesMoviesAlbumsCompaniesUni_cluster DBSCAN metric=cosine normalized_mutual_info_score 2 10 10
+Clustering citiesMoviesAlbumsCompaniesUni_cluster DBSCAN metric=cosine clustering_accuracy 4 10 10
+Clustering citiesMoviesAlbumsCompaniesUni_cluster KMeans "metric=enclidean, n_clusters=5" adjusted_rand_index 3 10 10
+Clustering citiesMoviesAlbumsCompaniesUni_cluster KMeans "metric=enclidean, n_clusters=5" adjusted_mutual_info_score 3 10 10
+Clustering citiesMoviesAlbumsCompaniesUni_cluster KMeans "metric=enclidean, n_clusters=5" homogeneity_score 2 10 10
+Clustering citiesMoviesAlbumsCompaniesUni_cluster KMeans "metric=enclidean, n_clusters=5" completeness_score 4 10 10
+Clustering citiesMoviesAlbumsCompaniesUni_cluster KMeans "metric=enclidean, n_clusters=5" v_measure_score 3 10 10
+Clustering citiesMoviesAlbumsCompaniesUni_cluster KMeans "metric=enclidean, n_clusters=5" normalized_mutual_info_score 3 10 10
+Clustering citiesMoviesAlbumsCompaniesUni_cluster KMeans "metric=enclidean, n_clusters=5" clustering_accuracy 3 10 10
+Clustering citiesMoviesAlbumsCompaniesUni_cluster "Agglomerative clustering" "metric=cosine, n_clusters=5" adjusted_rand_index 3 10 10
+Clustering citiesMoviesAlbumsCompaniesUni_cluster "Agglomerative clustering" "metric=cosine, n_clusters=5" adjusted_mutual_info_score 3 10 10
+Clustering citiesMoviesAlbumsCompaniesUni_cluster "Agglomerative clustering" "metric=cosine, n_clusters=5" homogeneity_score 3 10 10
+Clustering citiesMoviesAlbumsCompaniesUni_cluster "Agglomerative clustering" "metric=cosine, n_clusters=5" completeness_score 3 10 10
+Clustering citiesMoviesAlbumsCompaniesUni_cluster "Agglomerative clustering" "metric=cosine, n_clusters=5" v_measure_score 3 10 10
+Clustering citiesMoviesAlbumsCompaniesUni_cluster "Agglomerative clustering" "metric=cosine, n_clusters=5" normalized_mutual_info_score 3 10 10
+Clustering citiesMoviesAlbumsCompaniesUni_cluster "Agglomerative clustering" "metric=cosine, n_clusters=5" clustering_accuracy 3 10 10
+Clustering citiesMoviesAlbumsCompaniesUni_cluster "Ward hierarchical clustering" "metric=cosine, n_clusters=5" adjusted_rand_index 3 10 10
+Clustering citiesMoviesAlbumsCompaniesUni_cluster "Ward hierarchical clustering" "metric=cosine, n_clusters=5" adjusted_mutual_info_score 3 10 10
+Clustering citiesMoviesAlbumsCompaniesUni_cluster "Ward hierarchical clustering" "metric=cosine, n_clusters=5" homogeneity_score 3 10 10
+Clustering citiesMoviesAlbumsCompaniesUni_cluster "Ward hierarchical clustering" "metric=cosine, n_clusters=5" completeness_score 3 10 10
+Clustering citiesMoviesAlbumsCompaniesUni_cluster "Ward hierarchical clustering" "metric=cosine, n_clusters=5" v_measure_score 3 10 10
+Clustering citiesMoviesAlbumsCompaniesUni_cluster "Ward hierarchical clustering" "metric=cosine, n_clusters=5" normalized_mutual_info_score 3 10 10
+Clustering citiesMoviesAlbumsCompaniesUni_cluster "Ward hierarchical clustering" "metric=cosine, n_clusters=5" clustering_accuracy 3 10 10
+Clustering teams_cluster DBSCAN metric=cosine adjusted_rand_index 7 10 9
+Clustering teams_cluster DBSCAN metric=cosine adjusted_mutual_info_score 7 10 9
+Clustering teams_cluster DBSCAN metric=cosine homogeneity_score 6 10 9
+Clustering teams_cluster DBSCAN metric=cosine completeness_score 6 10 9
+Clustering teams_cluster DBSCAN metric=cosine v_measure_score 6 10 9
+Clustering teams_cluster DBSCAN metric=cosine normalized_mutual_info_score 6 10 9
+Clustering teams_cluster DBSCAN metric=cosine clustering_accuracy 4 10 9
+Clustering teams_cluster KMeans "metric=enclidean, n_clusters=2" adjusted_rand_index 7 10 10
+Clustering teams_cluster KMeans "metric=enclidean, n_clusters=2" adjusted_mutual_info_score 4 10 10
+Clustering teams_cluster KMeans "metric=enclidean, n_clusters=2" homogeneity_score 3 10 10
+Clustering teams_cluster KMeans "metric=enclidean, n_clusters=2" completeness_score 4 10 10
+Clustering teams_cluster KMeans "metric=enclidean, n_clusters=2" v_measure_score 4 10 10
+Clustering teams_cluster KMeans "metric=enclidean, n_clusters=2" normalized_mutual_info_score 4 10 10
+Clustering teams_cluster KMeans "metric=enclidean, n_clusters=2" clustering_accuracy 7 10 8
+Clustering teams_cluster "Agglomerative clustering" "metric=cosine, n_clusters=2" adjusted_rand_index 1 10 10
+Clustering teams_cluster "Agglomerative clustering" "metric=cosine, n_clusters=2" adjusted_mutual_info_score 4 10 10
+Clustering teams_cluster "Agglomerative clustering" "metric=cosine, n_clusters=2" homogeneity_score 4 10 10
+Clustering teams_cluster "Agglomerative clustering" "metric=cosine, n_clusters=2" completeness_score 4 10 10
+Clustering teams_cluster "Agglomerative clustering" "metric=cosine, n_clusters=2" v_measure_score 4 10 10
+Clustering teams_cluster "Agglomerative clustering" "metric=cosine, n_clusters=2" normalized_mutual_info_score 4 10 10
+Clustering teams_cluster "Agglomerative clustering" "metric=cosine, n_clusters=2" clustering_accuracy 8 10 8
+Clustering teams_cluster "Ward hierarchical clustering" "metric=cosine, n_clusters=2" adjusted_rand_index 0 10 10
+Clustering teams_cluster "Ward hierarchical clustering" "metric=cosine, n_clusters=2" adjusted_mutual_info_score 1 10 10
+Clustering teams_cluster "Ward hierarchical clustering" "metric=cosine, n_clusters=2" homogeneity_score 0 10 10
+Clustering teams_cluster "Ward hierarchical clustering" "metric=cosine, n_clusters=2" completeness_score 1 10 10
+Clustering teams_cluster "Ward hierarchical clustering" "metric=cosine, n_clusters=2" v_measure_score 1 10 10
+Clustering teams_cluster "Ward hierarchical clustering" "metric=cosine, n_clusters=2" normalized_mutual_info_score 1 10 10
+Clustering teams_cluster "Ward hierarchical clustering" "metric=cosine, n_clusters=2" clustering_accuracy 7 10 9
+DocumentSimilarity LP50 with_weights - pearson_score 0 10 10
+DocumentSimilarity LP50 with_weights - spearman_score 0 10 10
+DocumentSimilarity LP50 with_weights - harmonic_mean 0 10 10
+DocumentSimilarity LP50 without_weights - pearson_score 2 10 10
+DocumentSimilarity LP50 without_weights - spearman_score 0 10 10
+DocumentSimilarity LP50 without_weights - harmonic_mean 2 10 10
+EntityRelatedness KORE - - kendalltau_correlation 6 8 7
+SemanticAnalogies capital_country_entities - - accuracy 3 10 10
+SemanticAnalogies all_capital_country_entities - - accuracy 4 10 10
+SemanticAnalogies currency_entities - - accuracy 5 10 10
+SemanticAnalogies city_state_entities - - accuracy 2 10 10
