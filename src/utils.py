@@ -170,25 +170,18 @@ def combine_aligned_vectors(aligned_regex: str = None, target_file: str = None, 
                             entities.add(e)
                             outfile.write(line)
                          
-def filter_vector_file(vector_file: str = None, outpath: str = None):
-    ''' Filters the entities out of the vector file that are not used by GEval.
+
+def get_geval_entities() -> set:
+    ''' Makes a set of entities contained in the tasks of the evaluation framework GEval.
     
     Args:
-        vector_file (str): the vector file to be filtered.
-        outpath (str): the new vector file name that should be used.
-    Returns:
         none
+    Returns:
+        set: the entities
         
     '''
-    assert vector_file is not None, "No vector file path given, please specify."
-    assert outpath is not None, "No output file given, please specify."
-
     geval_path = dirname(geval.__file__)
     filtered_entities = set()
-
-    output_folder = os.path.dirname(outpath)
-    if not os.path.exists(output_folder):
-        os.mkdir(output_folder)
 
     # Classification
     for file in glob.glob(join(geval_path, "Classification", "data", "*.tsv")):
@@ -220,6 +213,28 @@ def filter_vector_file(vector_file: str = None, outpath: str = None):
             for line in f:
                 filtered_entities.update(set(line.rstrip().split()))
 
+    return filtered_entities
+
+
+def filter_vector_file(vector_file: str = None, outpath: str = None):
+    ''' Filters the entities out of the vector file that are not used by GEval.
+    
+    Args:
+        vector_file (str): the vector file to be filtered.
+        outpath (str): the new vector file name that should be used.
+    Returns:
+        none
+        
+    '''
+    assert vector_file is not None, "No vector file path given, please specify."
+    assert outpath is not None, "No output file given, please specify."
+
+    filtered_entities = get_geval_entities()
+
+    output_folder = os.path.dirname(outpath)
+    if not os.path.exists(output_folder):
+        os.mkdir(output_folder)
+
     # filter and write new vector file
     with open(outpath, "w") as outfile:
         with open(vector_file, "r") as infile:
@@ -227,6 +242,31 @@ def filter_vector_file(vector_file: str = None, outpath: str = None):
                 e = line.split(' ', 1)[0]
                 if e in filtered_entities:
                     outfile.write(line)
+
+
+def get_entitiy_distribution(partition_paths: list = None) -> pd.DataFrame:
+    ''' Calculates the distribution of entities used for evaluation in GEval in a given partition.
+    
+    Args:
+        partition_path (list): list of paths to the files that hold the partitions.
+        
+    Returns:
+        none
+        
+    '''
+    assert partition_paths is not None, "No list of paths given, please specify."
+
+    df = pd.DataFrame(columns=["file", "count", "share"])
+    entities = get_geval_entities()
+
+    for path in partition_paths:
+        partition = pd.read_csv(path, header=None, delim_whitespace=True, usecols=[0])
+        count = partition.iloc[:, 0].isin(entities).sum()
+        df = df.append({"file": path, "count": count, "share": (count / len(entities))}, ignore_index=True)
+
+    return df
+        
+
 
 
 def write_vector_file(file_type: str = "txt", file_name: str = None, entities: list = None, embeddings: list = None):
