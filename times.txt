@@ -22,14 +22,25 @@ Horizontal:
     9) 13min 43s (15min 1s)
 - rotatating the vectors to align them (check which holds most of the needed entities and use that to align the others to)
     - aligned to 0th partition: 42min 9.5s -> filtering: 43.8s
-- combining the embeddings: 3min 27.5s (with embedText: 3min 50.8s, without removing duplicates: 3min 45.7s, for the aligned partitions: 5min 23.5s)
-- evaluation: 6h 39min 6.2s (total, with embedText: 7h 30min 32.6s, without removing duplicates: 11h 41min 3.7s, for the aligned partitions: 9min 52s)
+    - aligned to 1st partition: 42min 49.2s -> filtering: 43.9s
+- combining the embeddings:
+    - 3min 27.5s
+    - with embedText: 3min 50.8s
+    - without removing duplicates: 3min 45.7s
+    - for the aligned0 partitions: 5min 23.5s
+    - for the aligned1 partitions: 5min 26.7s
+- evaluation:
+    - 6h 39min 6.2s (total) 
+    - with embedText: 7h 30min 32.6s
+    - without removing duplicates: 11h 41min 3.7s
+    - for the aligned0 partitions: 9min 52s
+    - for the aligned1 partitions: 9min 50.6s
 
 Min Edge Cut:
 - partition (+ encoding in chunks + statistics): 33min 35s (51min 4s)
 - chunkTranslator: 5min 17s
 - walk:  6min 30.2 (total, with decompressed files)
-- embedding:  (total, embedText in brackets: 2h 12min 29s)
+- embedding: 2h 5min 58s (total, embedText in brackets: 2h 12min 29s)
     0) 12min 33s (12min 44s)
     1) 12min 41s (12min 37s)
     2) 17min 30s(19min 9s)
@@ -39,9 +50,19 @@ Min Edge Cut:
     6) 11min 36s (12min 27s)
     7) 12min 14s (13min 3s)
     8) 13min 2s (13min 47s)
-    9) (11min 32s)
+    9) 10min 39s (11min 32s)
 - rotatating the vectors to align them (check which holds most of the needed entities and use that to align the others to)
     - aligned to 0th partition: 46min 33.9s -> filtering: 41.2s
-- combining the embeddings: 2min 11.1s (without removing duplicates: 5min 2.1s, for the aligned partitions: 6min 21.8)
-- evaluation: 7h 10min 20.4s (total, with embedText: 6h 15min 8.7s, without removing duplicates: failed partially, for the aligned partitions: 9min 38.4s)
+    - aligned to 0th partition: 47min 38.4s -> filtering: 44.2s
+- combining the embeddings:
+    - 2min 11.1s
+    - without removing duplicates: 5min 2.1s
+    - for the aligned0 partitions: 6min 21.8s
+    - for the aligned3 partitions: 4min 38.9s
+- evaluation:
+    - 7h 10min 20.4s (total)
+    - with embedText: 6h 15min 8.7s
+    - without removing duplicates: failed partially
+    - for the aligned0 partitions: 9min 38.4s
+    - for the aligned3 partitions: 10min 5.3s
     
