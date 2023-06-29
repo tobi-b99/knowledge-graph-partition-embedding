@@ -30,11 +30,38 @@ Horizontal:
     - for the aligned0 partitions: 5min 23.5s
     - for the aligned1 partitions: 5min 26.7s
 - evaluation:
-    - 6h 39min 6.2s (total) 
+    - 6h 39min 6.2s
     - with embedText: 7h 30min 32.6s
     - without removing duplicates: 11h 41min 3.7s
     - for the aligned0 partitions: 9min 52s
     - for the aligned1 partitions: 9min 50.6s
+
+Horizontal 100:
+- partition (+ encoding in chunks + statistics): 12min 54s (37min 10s)
+- chunkTranslator: 5min 3s
+- walk:  5min 8.1s (total, with decompressed files)
+- embedding: 1h 42min 17s (total)
+    0-9) 11min 27s
+    10-19) 10min 39s
+    20-29) 10min 5s
+    30-39) 10min
+    40-49) 9min 56s
+    50-59) 9min 27s
+    60-69) 10min 2s
+    70-79) 10min 18s
+    80-89) 9min 58s
+    90-99) 10min 25s
+- rotatating the vectors to align them (check which holds most of the needed entities and use that to align the others to)
+    - aligned to 0th partition: 
+    - aligned to 1st partition: 
+- combining the embeddings:
+    - 
+    - for the aligned0 partitions: 
+    - for the aligned1 partitions: 
+- evaluation:
+    - 
+    - for the aligned0 partitions: 
+    - for the aligned1 partitions: 
 
 Min Edge Cut:
 - partition (+ encoding in chunks + statistics): 33min 35s (51min 4s)
@@ -60,9 +87,35 @@ Min Edge Cut:
     - for the aligned0 partitions: 6min 21.8s
     - for the aligned3 partitions: 4min 38.9s
 - evaluation:
-    - 7h 10min 20.4s (total)
+    - 7h 10min 20.4s
     - with embedText: 6h 15min 8.7s
     - without removing duplicates: failed partially
     - for the aligned0 partitions: 9min 38.4s
     - for the aligned3 partitions: 10min 5.3s
-    
+
+Min Edge Cut 100:
+- partition (+ encoding in chunks + statistics): 35min 25s (1h 15min 2s)
+- chunkTranslator: 5min 40s
+- walk:  4min 47.5s (total, with decompressed files)
+- embedding:  (total)
+    0-9) 
+    10-19) 
+    20-29) 
+    30-39) 
+    40-49) 
+    50-59) 
+    60-69) 
+    70-79) 
+    80-89) 
+    90-99) 
+- rotatating the vectors to align them (check which holds most of the needed entities and use that to align the others to)
+    - aligned to 0th partition: 
+    - aligned to 1st partition: 
+- combining the embeddings:
+    - 
+    - for the aligned0 partitions: 
+    - for the aligned1 partitions: 
+- evaluation:
+    - 
+    - for the aligned0 partitions: 
+    - for the aligned1 partitions: 
