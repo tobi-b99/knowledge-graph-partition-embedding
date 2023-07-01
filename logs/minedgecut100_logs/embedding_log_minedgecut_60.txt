@@ -1,0 +1,169 @@
+Using server port: 1808
+Using 8 threads for walk generation and training.
+Using vector dimension: 100
+Using depth 4
+Generating 100 walks per entity.
+Only training is performed, no walks are going to be generated.
+01 Juli 2023 11:49:42 DEBUG [main] (RequestAddCookies.java:123) - CookieSpec selected: default
+01 Juli 2023 11:49:42 DEBUG [main] (RequestAuthCache.java:77) - Auth cache not set in the context
+01 Juli 2023 11:49:42 DEBUG [main] (PoolingHttpClientConnectionManager.java:267) - Connection request: [route: {}->http://127.0.0.1:1808][total available: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+01 Juli 2023 11:49:42 DEBUG [main] (PoolingHttpClientConnectionManager.java:312) - Connection leased: [id: 0][route: {}->http://127.0.0.1:1808][total available: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+01 Juli 2023 11:49:42 DEBUG [main] (MainClientExec.java:234) - Opening connection {}->http://127.0.0.1:1808
+01 Juli 2023 11:49:42 DEBUG [main] (DefaultHttpClientConnectionOperator.java:139) - Connecting to /127.0.0.1:1808
+ * Serving Flask app 'python_server'
+ * Debug mode: off
+01 Juli 2023 11:49:44 DEBUG [main] (DefaultHttpClientConnectionOperator.java:146) - Connection established 127.0.0.1:63179<->127.0.0.1:1808
+01 Juli 2023 11:49:44 DEBUG [main] (MainClientExec.java:255) - Executing request GET /melt_ml.html HTTP/1.1
+01 Juli 2023 11:49:44 DEBUG [main] (MainClientExec.java:260) - Target auth state: UNCHALLENGED
+01 Juli 2023 11:49:44 DEBUG [main] (MainClientExec.java:266) - Proxy auth state: UNCHALLENGED
+01 Juli 2023 11:49:44 DEBUG [main] (LoggingManagedHttpClientConnection.java:133) - http-outgoing-0 >> GET /melt_ml.html HTTP/1.1
+01 Juli 2023 11:49:44 DEBUG [main] (LoggingManagedHttpClientConnection.java:136) - http-outgoing-0 >> Host: 127.0.0.1:1808
+01 Juli 2023 11:49:44 DEBUG [main] (LoggingManagedHttpClientConnection.java:136) - http-outgoing-0 >> Connection: Keep-Alive
+01 Juli 2023 11:49:44 DEBUG [main] (LoggingManagedHttpClientConnection.java:136) - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+01 Juli 2023 11:49:44 DEBUG [main] (LoggingManagedHttpClientConnection.java:136) - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+01 Juli 2023 11:49:44 DEBUG [main] (Wire.java:73) - http-outgoing-0 >> "GET /melt_ml.html HTTP/1.1[\r][\n]"
+01 Juli 2023 11:49:44 DEBUG [main] (Wire.java:73) - http-outgoing-0 >> "Host: 127.0.0.1:1808[\r][\n]"
+01 Juli 2023 11:49:44 DEBUG [main] (Wire.java:73) - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+01 Juli 2023 11:49:44 DEBUG [main] (Wire.java:73) - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)[\r][\n]"
+01 Juli 2023 11:49:44 DEBUG [main] (Wire.java:73) - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+01 Juli 2023 11:49:44 DEBUG [main] (Wire.java:73) - http-outgoing-0 >> "[\r][\n]"
+01 Juli 2023 11:49:44 DEBUG [main] (Wire.java:73) - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+01 Juli 2023 11:49:44 DEBUG [main] (Wire.java:73) - http-outgoing-0 << "Server: Werkzeug/2.2.3 Python/3.7.12[\r][\n]"
+01 Juli 2023 11:49:44 DEBUG [main] (Wire.java:73) - http-outgoing-0 << "Date: Sat, 01 Jul 2023 09:49:44 GMT[\r][\n]"
+01 Juli 2023 11:49:44 DEBUG [main] (Wire.java:73) - http-outgoing-0 << "Content-Type: text/html; charset=utf-8[\r][\n]"
+01 Juli 2023 11:49:44 DEBUG [main] (Wire.java:73) - http-outgoing-0 << "Content-Length: 49[\r][\n]"
+01 Juli 2023 11:49:44 DEBUG [main] (Wire.java:73) - http-outgoing-0 << "Connection: close[\r][\n]"
+01 Juli 2023 11:49:44 DEBUG [main] (Wire.java:73) - http-outgoing-0 << "[\r][\n]"
+01 Juli 2023 11:49:44 DEBUG [main] (LoggingManagedHttpClientConnection.java:122) - http-outgoing-0 << HTTP/1.1 200 OK
+01 Juli 2023 11:49:44 DEBUG [main] (LoggingManagedHttpClientConnection.java:125) - http-outgoing-0 << Server: Werkzeug/2.2.3 Python/3.7.12
+01 Juli 2023 11:49:44 DEBUG [main] (LoggingManagedHttpClientConnection.java:125) - http-outgoing-0 << Date: Sat, 01 Jul 2023 09:49:44 GMT
+01 Juli 2023 11:49:44 DEBUG [main] (LoggingManagedHttpClientConnection.java:125) - http-outgoing-0 << Content-Type: text/html; charset=utf-8
+01 Juli 2023 11:49:44 DEBUG [main] (LoggingManagedHttpClientConnection.java:125) - http-outgoing-0 << Content-Length: 49
+01 Juli 2023 11:49:44 DEBUG [main] (LoggingManagedHttpClientConnection.java:125) - http-outgoing-0 << Connection: close
+01 Juli 2023 11:49:44  INFO [main] (Gensim.java:687) - Server is running.
+01 Juli 2023 11:49:44 DEBUG [main] (LoggingManagedHttpClientConnection.java:79) - http-outgoing-0: Close connection
+01 Juli 2023 11:49:44 DEBUG [main] (ConnectionHolder.java:104) - Connection discarded
+01 Juli 2023 11:49:44 DEBUG [main] (PoolingHttpClientConnectionManager.java:351) - Connection released: [id: 0][route: {}->http://127.0.0.1:1808][total available: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+01 Juli 2023 11:49:44  INFO [main] (Gensim.java:721) - Server started.
+Server URL: http://127.0.0.1:1808
+Server port: 1808
+01 Juli 2023 11:49:44 ERROR [main] (Gensim.java:501) - ERROR: The specified model path does not exist or is a directory.
+01 Juli 2023 11:49:44 ERROR [main] (Gensim.java:502) - Provided file path: c:\Users\Admin\OneDrive\Documents\GitHub\knowledge-graph-partition-embedding\.\walks\walks_minedgecut100\walks_minedgecut_60
+01 Juli 2023 11:49:44 DEBUG [main] (RequestAddCookies.java:123) - CookieSpec selected: default
+01 Juli 2023 11:49:44 DEBUG [main] (RequestAuthCache.java:77) - Auth cache not set in the context
+01 Juli 2023 11:49:44 DEBUG [main] (PoolingHttpClientConnectionManager.java:267) - Connection request: [route: {}->http://127.0.0.1:1808][total available: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+01 Juli 2023 11:49:44 DEBUG [main] (PoolingHttpClientConnectionManager.java:312) - Connection leased: [id: 1][route: {}->http://127.0.0.1:1808][total available: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+01 Juli 2023 11:49:44 DEBUG [main] (MainClientExec.java:234) - Opening connection {}->http://127.0.0.1:1808
+01 Juli 2023 11:49:44 DEBUG [main] (DefaultHttpClientConnectionOperator.java:139) - Connecting to /127.0.0.1:1808
+01 Juli 2023 11:49:44 DEBUG [main] (DefaultHttpClientConnectionOperator.java:146) - Connection established 127.0.0.1:63184<->127.0.0.1:1808
+01 Juli 2023 11:49:44 DEBUG [main] (MainClientExec.java:255) - Executing request GET /train-word2vec HTTP/1.1
+01 Juli 2023 11:49:44 DEBUG [main] (MainClientExec.java:260) - Target auth state: UNCHALLENGED
+01 Juli 2023 11:49:44 DEBUG [main] (MainClientExec.java:266) - Proxy auth state: UNCHALLENGED
+01 Juli 2023 11:49:44 DEBUG [main] (LoggingManagedHttpClientConnection.java:133) - http-outgoing-1 >> GET /train-word2vec HTTP/1.1
+01 Juli 2023 11:49:44 DEBUG [main] (LoggingManagedHttpClientConnection.java:136) - http-outgoing-1 >> vector_path: c:\Users\Admin\OneDrive\Documents\GitHub\knowledge-graph-partition-embedding\.\walks\walks_minedgecut100\walks_minedgecut_60/model.kv
+01 Juli 2023 11:49:44 DEBUG [main] (LoggingManagedHttpClientConnection.java:136) - http-outgoing-1 >> model_path: c:\Users\Admin\OneDrive\Documents\GitHub\knowledge-graph-partition-embedding\.\walks\walks_minedgecut100\walks_minedgecut_60/model
+01 Juli 2023 11:49:44 DEBUG [main] (LoggingManagedHttpClientConnection.java:136) - http-outgoing-1 >> file_path: c:\Users\Admin\OneDrive\Documents\GitHub\knowledge-graph-partition-embedding\.\walks\walks_minedgecut100\walks_minedgecut_60
+01 Juli 2023 11:49:44 DEBUG [main] (LoggingManagedHttpClientConnection.java:136) - http-outgoing-1 >> vector_dimension: 100
+01 Juli 2023 11:49:44 DEBUG [main] (LoggingManagedHttpClientConnection.java:136) - http-outgoing-1 >> number_of_threads: 8
+01 Juli 2023 11:49:44 DEBUG [main] (LoggingManagedHttpClientConnection.java:136) - http-outgoing-1 >> window_size: 5
+01 Juli 2023 11:49:44 DEBUG [main] (LoggingManagedHttpClientConnection.java:136) - http-outgoing-1 >> iterations: 5
+01 Juli 2023 11:49:44 DEBUG [main] (LoggingManagedHttpClientConnection.java:136) - http-outgoing-1 >> negatives: 5
+01 Juli 2023 11:49:44 DEBUG [main] (LoggingManagedHttpClientConnection.java:136) - http-outgoing-1 >> cbow_or_sg: sg
+01 Juli 2023 11:49:44 DEBUG [main] (LoggingManagedHttpClientConnection.java:136) - http-outgoing-1 >> min_count: 1
+01 Juli 2023 11:49:44 DEBUG [main] (LoggingManagedHttpClientConnection.java:136) - http-outgoing-1 >> sample: 0.0
+01 Juli 2023 11:49:44 DEBUG [main] (LoggingManagedHttpClientConnection.java:136) - http-outgoing-1 >> epochs: 5
+01 Juli 2023 11:49:44 DEBUG [main] (LoggingManagedHttpClientConnection.java:136) - http-outgoing-1 >> hierarchical_softmax: false
+01 Juli 2023 11:49:44 DEBUG [main] (LoggingManagedHttpClientConnection.java:136) - http-outgoing-1 >> Host: 127.0.0.1:1808
+01 Juli 2023 11:49:44 DEBUG [main] (LoggingManagedHttpClientConnection.java:136) - http-outgoing-1 >> Connection: Keep-Alive
+01 Juli 2023 11:49:44 DEBUG [main] (LoggingManagedHttpClientConnection.java:136) - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+01 Juli 2023 11:49:44 DEBUG [main] (LoggingManagedHttpClientConnection.java:136) - http-outgoing-1 >> Accept-Encoding: gzip,deflate
+01 Juli 2023 11:49:44 DEBUG [main] (Wire.java:73) - http-outgoing-1 >> "GET /train-word2vec HTTP/1.1[\r][\n]"
+01 Juli 2023 11:49:44 DEBUG [main] (Wire.java:73) - http-outgoing-1 >> "vector_path: c:\Users\Admin\OneDrive\Documents\GitHub\knowledge-graph-partition-embedding\.\walks\walks_minedgecut100\walks_minedgecut_60/model.kv[\r][\n]"
+01 Juli 2023 11:49:44 DEBUG [main] (Wire.java:73) - http-outgoing-1 >> "model_path: c:\Users\Admin\OneDrive\Documents\GitHub\knowledge-graph-partition-embedding\.\walks\walks_minedgecut100\walks_minedgecut_60/model[\r][\n]"
+01 Juli 2023 11:49:44 DEBUG [main] (Wire.java:73) - http-outgoing-1 >> "file_path: c:\Users\Admin\OneDrive\Documents\GitHub\knowledge-graph-partition-embedding\.\walks\walks_minedgecut100\walks_minedgecut_60[\r][\n]"
+01 Juli 2023 11:49:44 DEBUG [main] (Wire.java:73) - http-outgoing-1 >> "vector_dimension: 100[\r][\n]"
+01 Juli 2023 11:49:44 DEBUG [main] (Wire.java:73) - http-outgoing-1 >> "number_of_threads: 8[\r][\n]"
+01 Juli 2023 11:49:44 DEBUG [main] (Wire.java:73) - http-outgoing-1 >> "window_size: 5[\r][\n]"
+01 Juli 2023 11:49:44 DEBUG [main] (Wire.java:73) - http-outgoing-1 >> "iterations: 5[\r][\n]"
+01 Juli 2023 11:49:44 DEBUG [main] (Wire.java:73) - http-outgoing-1 >> "negatives: 5[\r][\n]"
+01 Juli 2023 11:49:44 DEBUG [main] (Wire.java:73) - http-outgoing-1 >> "cbow_or_sg: sg[\r][\n]"
+01 Juli 2023 11:49:44 DEBUG [main] (Wire.java:73) - http-outgoing-1 >> "min_count: 1[\r][\n]"
+01 Juli 2023 11:49:44 DEBUG [main] (Wire.java:73) - http-outgoing-1 >> "sample: 0.0[\r][\n]"
+01 Juli 2023 11:49:44 DEBUG [main] (Wire.java:73) - http-outgoing-1 >> "epochs: 5[\r][\n]"
+01 Juli 2023 11:49:44 DEBUG [main] (Wire.java:73) - http-outgoing-1 >> "hierarchical_softmax: false[\r][\n]"
+01 Juli 2023 11:49:44 DEBUG [main] (Wire.java:73) - http-outgoing-1 >> "Host: 127.0.0.1:1808[\r][\n]"
+01 Juli 2023 11:49:44 DEBUG [main] (Wire.java:73) - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+01 Juli 2023 11:49:44 DEBUG [main] (Wire.java:73) - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)[\r][\n]"
+01 Juli 2023 11:49:44 DEBUG [main] (Wire.java:73) - http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+01 Juli 2023 11:49:44 DEBUG [main] (Wire.java:73) - http-outgoing-1 >> "[\r][\n]"
+01 Juli 2023 11:49:56 DEBUG [main] (Wire.java:73) - http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
+01 Juli 2023 11:49:56 DEBUG [main] (Wire.java:73) - http-outgoing-1 << "Server: Werkzeug/2.2.3 Python/3.7.12[\r][\n]"
+01 Juli 2023 11:49:56 DEBUG [main] (Wire.java:73) - http-outgoing-1 << "Date: Sat, 01 Jul 2023 09:49:56 GMT[\r][\n]"
+01 Juli 2023 11:49:56 DEBUG [main] (Wire.java:73) - http-outgoing-1 << "Content-Type: text/html; charset=utf-8[\r][\n]"
+01 Juli 2023 11:49:56 DEBUG [main] (Wire.java:73) - http-outgoing-1 << "Content-Length: 4[\r][\n]"
+01 Juli 2023 11:49:56 DEBUG [main] (Wire.java:73) - http-outgoing-1 << "Connection: close[\r][\n]"
+01 Juli 2023 11:49:56 DEBUG [main] (Wire.java:73) - http-outgoing-1 << "[\r][\n]"
+01 Juli 2023 11:49:56 DEBUG [main] (LoggingManagedHttpClientConnection.java:122) - http-outgoing-1 << HTTP/1.1 200 OK
+01 Juli 2023 11:49:56 DEBUG [main] (LoggingManagedHttpClientConnection.java:125) - http-outgoing-1 << Server: Werkzeug/2.2.3 Python/3.7.12
+01 Juli 2023 11:49:56 DEBUG [main] (LoggingManagedHttpClientConnection.java:125) - http-outgoing-1 << Date: Sat, 01 Jul 2023 09:49:56 GMT
+01 Juli 2023 11:49:56 DEBUG [main] (LoggingManagedHttpClientConnection.java:125) - http-outgoing-1 << Content-Type: text/html; charset=utf-8
+01 Juli 2023 11:49:56 DEBUG [main] (LoggingManagedHttpClientConnection.java:125) - http-outgoing-1 << Content-Length: 4
+01 Juli 2023 11:49:56 DEBUG [main] (LoggingManagedHttpClientConnection.java:125) - http-outgoing-1 << Connection: close
+01 Juli 2023 11:49:56 DEBUG [main] (Wire.java:87) - http-outgoing-1 << "True"
+01 Juli 2023 11:49:56 DEBUG [main] (LoggingManagedHttpClientConnection.java:79) - http-outgoing-1: Close connection
+01 Juli 2023 11:49:56 DEBUG [main] (ConnectionHolder.java:104) - Connection discarded
+01 Juli 2023 11:49:56 DEBUG [main] (PoolingHttpClientConnectionManager.java:351) - Connection released: [id: 1][route: {}->http://127.0.0.1:1808][total available: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+01 Juli 2023 11:49:56 DEBUG [main] (RequestAddCookies.java:123) - CookieSpec selected: default
+01 Juli 2023 11:49:56 DEBUG [main] (RequestAuthCache.java:77) - Auth cache not set in the context
+01 Juli 2023 11:49:56 DEBUG [main] (PoolingHttpClientConnectionManager.java:267) - Connection request: [route: {}->http://127.0.0.1:1808][total available: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+01 Juli 2023 11:49:56 DEBUG [main] (PoolingHttpClientConnectionManager.java:312) - Connection leased: [id: 2][route: {}->http://127.0.0.1:1808][total available: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+01 Juli 2023 11:49:56 DEBUG [main] (MainClientExec.java:234) - Opening connection {}->http://127.0.0.1:1808
+01 Juli 2023 11:49:56 DEBUG [main] (DefaultHttpClientConnectionOperator.java:139) - Connecting to /127.0.0.1:1808
+01 Juli 2023 11:49:56 DEBUG [main] (DefaultHttpClientConnectionOperator.java:146) - Connection established 127.0.0.1:63191<->127.0.0.1:1808
+01 Juli 2023 11:49:56 DEBUG [main] (MainClientExec.java:255) - Executing request GET /write-model-as-text-file HTTP/1.1
+01 Juli 2023 11:49:56 DEBUG [main] (MainClientExec.java:260) - Target auth state: UNCHALLENGED
+01 Juli 2023 11:49:56 DEBUG [main] (MainClientExec.java:266) - Proxy auth state: UNCHALLENGED
+01 Juli 2023 11:49:56 DEBUG [main] (LoggingManagedHttpClientConnection.java:133) - http-outgoing-2 >> GET /write-model-as-text-file HTTP/1.1
+01 Juli 2023 11:49:56 DEBUG [main] (LoggingManagedHttpClientConnection.java:136) - http-outgoing-2 >> vector_path: C:\Users\Admin\OneDrive\Documents\GitHub\knowledge-graph-partition-embedding\walks\walks_minedgecut100\walks_minedgecut_60\model.kv
+01 Juli 2023 11:49:56 DEBUG [main] (LoggingManagedHttpClientConnection.java:136) - http-outgoing-2 >> file_to_write: c:\Users\Admin\OneDrive\Documents\GitHub\knowledge-graph-partition-embedding\.\walks\walks_minedgecut100\walks_minedgecut_60/vectors.txt
+01 Juli 2023 11:49:56 DEBUG [main] (LoggingManagedHttpClientConnection.java:136) - http-outgoing-2 >> Host: 127.0.0.1:1808
+01 Juli 2023 11:49:56 DEBUG [main] (LoggingManagedHttpClientConnection.java:136) - http-outgoing-2 >> Connection: Keep-Alive
+01 Juli 2023 11:49:56 DEBUG [main] (LoggingManagedHttpClientConnection.java:136) - http-outgoing-2 >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+01 Juli 2023 11:49:56 DEBUG [main] (LoggingManagedHttpClientConnection.java:136) - http-outgoing-2 >> Accept-Encoding: gzip,deflate
+01 Juli 2023 11:49:56 DEBUG [main] (Wire.java:73) - http-outgoing-2 >> "GET /write-model-as-text-file HTTP/1.1[\r][\n]"
+01 Juli 2023 11:49:56 DEBUG [main] (Wire.java:73) - http-outgoing-2 >> "vector_path: C:\Users\Admin\OneDrive\Documents\GitHub\knowledge-graph-partition-embedding\walks\walks_minedgecut100\walks_minedgecut_60\model.kv[\r][\n]"
+01 Juli 2023 11:49:56 DEBUG [main] (Wire.java:73) - http-outgoing-2 >> "file_to_write: c:\Users\Admin\OneDrive\Documents\GitHub\knowledge-graph-partition-embedding\.\walks\walks_minedgecut100\walks_minedgecut_60/vectors.txt[\r][\n]"
+01 Juli 2023 11:49:56 DEBUG [main] (Wire.java:73) - http-outgoing-2 >> "Host: 127.0.0.1:1808[\r][\n]"
+01 Juli 2023 11:49:56 DEBUG [main] (Wire.java:73) - http-outgoing-2 >> "Connection: Keep-Alive[\r][\n]"
+01 Juli 2023 11:49:56 DEBUG [main] (Wire.java:73) - http-outgoing-2 >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)[\r][\n]"
+01 Juli 2023 11:49:56 DEBUG [main] (Wire.java:73) - http-outgoing-2 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+01 Juli 2023 11:49:56 DEBUG [main] (Wire.java:73) - http-outgoing-2 >> "[\r][\n]"
+Writing the vectors as text file.
+01 Juli 2023 11:50:46 DEBUG [main] (Wire.java:73) - http-outgoing-2 << "HTTP/1.1 200 OK[\r][\n]"
+01 Juli 2023 11:50:46 DEBUG [main] (Wire.java:73) - http-outgoing-2 << "Server: Werkzeug/2.2.3 Python/3.7.12[\r][\n]"
+01 Juli 2023 11:50:46 DEBUG [main] (Wire.java:73) - http-outgoing-2 << "Date: Sat, 01 Jul 2023 09:50:46 GMT[\r][\n]"
+01 Juli 2023 11:50:46 DEBUG [main] (Wire.java:73) - http-outgoing-2 << "Content-Type: text/html; charset=utf-8[\r][\n]"
+01 Juli 2023 11:50:46 DEBUG [main] (Wire.java:73) - http-outgoing-2 << "Content-Length: 4[\r][\n]"
+01 Juli 2023 11:50:46 DEBUG [main] (Wire.java:73) - http-outgoing-2 << "Connection: close[\r][\n]"
+01 Juli 2023 11:50:46 DEBUG [main] (Wire.java:73) - http-outgoing-2 << "[\r][\n]"
+01 Juli 2023 11:50:46 DEBUG [main] (LoggingManagedHttpClientConnection.java:122) - http-outgoing-2 << HTTP/1.1 200 OK
+01 Juli 2023 11:50:46 DEBUG [main] (LoggingManagedHttpClientConnection.java:125) - http-outgoing-2 << Server: Werkzeug/2.2.3 Python/3.7.12
+01 Juli 2023 11:50:46 DEBUG [main] (LoggingManagedHttpClientConnection.java:125) - http-outgoing-2 << Date: Sat, 01 Jul 2023 09:50:46 GMT
+01 Juli 2023 11:50:46 DEBUG [main] (LoggingManagedHttpClientConnection.java:125) - http-outgoing-2 << Content-Type: text/html; charset=utf-8
+01 Juli 2023 11:50:46 DEBUG [main] (LoggingManagedHttpClientConnection.java:125) - http-outgoing-2 << Content-Length: 4
+01 Juli 2023 11:50:46 DEBUG [main] (LoggingManagedHttpClientConnection.java:125) - http-outgoing-2 << Connection: close
+01 Juli 2023 11:50:46 DEBUG [main] (Wire.java:87) - http-outgoing-2 << "True"
+01 Juli 2023 11:50:46 DEBUG [main] (LoggingManagedHttpClientConnection.java:79) - http-outgoing-2: Close connection
+01 Juli 2023 11:50:46 DEBUG [main] (ConnectionHolder.java:104) - Connection discarded
+01 Juli 2023 11:50:46 DEBUG [main] (PoolingHttpClientConnectionManager.java:351) - Connection released: [id: 2][route: {}->http://127.0.0.1:1808][total available: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+
+Total Time:
+Days: 0
+Hours: 0
+Minutes: 1
+Seconds: 4
+
+01 Juli 2023 11:50:46  INFO [Thread-0] (Gensim.java:715) - JVM shutdown detected - close python server if still open.
+01 Juli 2023 11:50:46 DEBUG [Thread-0] (PoolingHttpClientConnectionManager.java:411) - Connection manager is shutting down
+01 Juli 2023 11:50:46 DEBUG [Thread-0] (PoolingHttpClientConnectionManager.java:434) - Connection manager shut down
+01 Juli 2023 11:50:46  INFO [Thread-0] (Gensim.java:717) - Shutdown completed.
