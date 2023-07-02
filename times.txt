@@ -30,7 +30,7 @@ Horizontal:
     - for the aligned0 partitions: 5min 23.5s -> filtering: 43.8s
     - for the aligned1 partitions: 5min 26.7s -> filtering: 43.9s
 - evaluation:
-    - 6h 39min 6.2s
+    - 6h 39min 6.2s (no filtering)
     - with embedText: 7h 30min 32.6s
     - without removing duplicates: 11h 41min 3.7s
     - for the aligned0 partitions: 9min 52s
@@ -59,9 +59,9 @@ Horizontal 100:
     - for the aligned0 partitions: 6min 44.5s -> filtering: 48.4s
     - for the aligned95 partitions: 5min 54.8s -> filtering: 45.8s
 - evaluation:
-    - 
-    - for the aligned0 partitions: 
-    - for the aligned95 partitions: 
+    - 9min 49.5s
+    - for the aligned0 partitions: 10min 7.2s
+    - for the aligned95 partitions: 10min 7.3s
 
 Min Edge Cut:
 - partition (+ encoding in chunks + statistics): 33min 35s (51min 4s)
@@ -110,12 +110,12 @@ Min Edge Cut 100:
     90-99) 12min 7s
 - rotatating the vectors to align them (check which holds most of the needed entities and use that to align the others to)
     - aligned to 0th partition: 1h 8min 59.7s
-    - aligned to 1st partition: 
+    - aligned to 1st partition: 1h 9min 20.8s
 - combining the embeddings:
     - 4min 33.8s -> filtering: 35.3s
     - for the aligned0 partitions: 8min 2.4s -> filtering: 45.7s
-    - for the aligned1 partitions: 
+    - for the aligned1 partitions: 6min 38s -> filtering: 46.9s
 - evaluation:
-    - 
-    - for the aligned0 partitions: 
-    - for the aligned1 partitions: 
+    - 9min 54.6s
+    - for the aligned0 partitions: 10min 14.4s
+    - for the aligned1 partitions: 10min 13.4s
