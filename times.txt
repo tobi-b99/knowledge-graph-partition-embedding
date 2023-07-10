@@ -97,7 +97,7 @@ Min Edge Cut 100:
 - partition (+ encoding in chunks + statistics): 35min 25s (1h 15min 2s)
 - chunkTranslator: 5min 40s
 - walk:  4min 47.5s (total, with decompressed files)
-- embedding:  (total)
+- embedding: 1h 55min 42s (total)
     0-9) 11min 31s
     10-19) 11min 28s
     20-29) 11min 23s
