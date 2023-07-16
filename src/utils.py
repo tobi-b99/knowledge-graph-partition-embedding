@@ -244,7 +244,7 @@ def filter_vector_file(vector_file: str = None, outpath: str = None):
                     outfile.write(line)
 
 
-def get_entitiy_distribution(partition_paths: list = None) -> pd.DataFrame:
+def get_entity_distribution(partition_paths: list = None) -> pd.DataFrame:
     ''' Calculates the distribution of entities used for evaluation in GEval in a given partition.
     
     Args:
