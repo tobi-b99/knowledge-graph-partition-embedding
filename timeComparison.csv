@@ -1,0 +1,6 @@
+﻿Step;Partitioning;Walks;Embedding;Combining;Total
+Complete;0;0.745;13.2133;0;13.9583
+Horizontal;0.135;0.1125;1.9239;0.05778;2.22918
+Minedgecut;0.55972;0.10833;2.0994;0.03639;2.80384
+Horizontal100;0.215;0.08556;1.7047;0.0525;2.05776
+Minedgecut100;0.59028;0.08;1.9283;0.07611;2.67469
