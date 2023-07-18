@@ -171,47 +171,58 @@ def combine_aligned_vectors(aligned_regex: str = None, target_file: str = None, 
                             outfile.write(line)
                          
 
-def get_geval_entities() -> set:
+def get_geval_entities(tasktype: str = None) -> set:
     ''' Makes a set of entities contained in the tasks of the evaluation framework GEval.
     
     Args:
-        none
+        tasktype (str): "all" or task type name indicating which entities to get.
     Returns:
-        set: the entities
+        set: the entities.
         
     '''
+    tasktype_list = ["all", "Classification", "Clustering", "Regression", "DocumentSimilarity","EntityRelatedness", "SemanticAnalogies"]
+    assert tasktype is not None, "No selection of task type given, please specify."
+    assert tasktype not in tasktype_list, ("Lease provide a task type from the following choices: all, Classification, Clustering, "
+                                           "Regression, DocumentSimilarity, EntityRelatedness, SemanticAnalogies")
+
     geval_path = dirname(geval.__file__)
     filtered_entities = set()
 
     # Classification
-    for file in glob.glob(join(geval_path, "Classification", "data", "*.tsv")):
-        df = pd.read_csv(file, usecols=["DBpedia_URI15"], delim_whitespace=True)
-        filtered_entities.update(set(df.iloc[:, 0]))
+    if(tasktype == "all" or tasktype == "Classification"):
+        for file in glob.glob(join(geval_path, "Classification", "data", "*.tsv")):
+            df = pd.read_csv(file, usecols=["DBpedia_URI15"], delim_whitespace=True)
+            filtered_entities.update(set(df.iloc[:, 0]))
 
     # Clustering
-    for file in glob.glob(join(geval_path, "Clustering", "data", "*.tsv")):
-        df = pd.read_csv(file, usecols=["DBpedia_URI"], delim_whitespace=True)
-        filtered_entities.update(set(df.iloc[:, 0]))
+    if(tasktype == "all" or tasktype == "Clustering"):
+        for file in glob.glob(join(geval_path, "Clustering", "data", "*.tsv")):
+            df = pd.read_csv(file, usecols=["DBpedia_URI"], delim_whitespace=True)
+            filtered_entities.update(set(df.iloc[:, 0]))
 
     # Regression
-    for file in glob.glob(join(geval_path, "Regression", "data", "*.tsv")):
-        df = pd.read_csv(file, usecols=["DBpedia_URI15"], delim_whitespace=True)
-        filtered_entities.update(set(df.iloc[:, 0]))
+    if(tasktype == "all" or tasktype == "Regression"):
+        for file in glob.glob(join(geval_path, "Regression", "data", "*.tsv")):
+            df = pd.read_csv(file, usecols=["DBpedia_URI15"], delim_whitespace=True)
+            filtered_entities.update(set(df.iloc[:, 0]))
 
     # DocumentSimilarity
-    dsm = DocumentSimilarityDataManager(debugging_mode=False)
-    filtered_entities.update(set(dsm.get_entities(filename=join(geval_path, "DocumentSimilarity", "data", "LP50_entities.json")).iloc[:, 0]))
+    if(tasktype == "all" or tasktype == "DocumentSimilarity"):
+        dsm = DocumentSimilarityDataManager(debugging_mode=False)
+        filtered_entities.update(set(dsm.get_entities(filename=join(geval_path, "DocumentSimilarity", "data", "LP50_entities.json")).iloc[:, 0]))
 
     # EntityRelatedness
-    with open(join(geval_path, "EntityRelatedness", "data", "KORE.txt"), "r") as file:
-        for line in file:
-            filtered_entities.add(line)
+    if(tasktype == "all" or tasktype == "EntityRelatedness"):
+        with open(join(geval_path, "EntityRelatedness", "data", "KORE.txt"), "r") as file:
+            for line in file:
+                filtered_entities.add(line)
 
     # SemanticAnalogies
-    for file in glob.glob(join(geval_path, "SemanticAnalogies", "data", "*.txt")):
-        with open(file, "r") as f:
-            for line in f:
-                filtered_entities.update(set(line.rstrip().split()))
+    if(tasktype == "all" or tasktype == "SemanticAnalogies"):
+        for file in glob.glob(join(geval_path, "SemanticAnalogies", "data", "*.txt")):
+            with open(file, "r") as f:
+                for line in f:
+                    filtered_entities.update(set(line.rstrip().split()))
 
     return filtered_entities
 
@@ -229,7 +240,7 @@ def filter_vector_file(vector_file: str = None, outpath: str = None):
     assert vector_file is not None, "No vector file path given, please specify."
     assert outpath is not None, "No output file given, please specify."
 
-    filtered_entities = get_geval_entities()
+    filtered_entities = get_geval_entities("all")
 
     output_folder = os.path.dirname(outpath)
     if not os.path.exists(output_folder):
@@ -244,20 +255,21 @@ def filter_vector_file(vector_file: str = None, outpath: str = None):
                     outfile.write(line)
 
 
-def get_entity_distribution(partition_paths: list = None) -> pd.DataFrame:
+def get_entity_distribution(partition_paths: list = None, tasktype: str = None) -> pd.DataFrame:
     ''' Calculates the distribution of entities used for evaluation in GEval in a given partition.
     
     Args:
         partition_path (list): list of paths to the files that hold the partitions.
-        
+        tasktype (str): "all" or task type that the distribution is to be done for.
     Returns:
-        none
+        pd.DataFrame: collection of the entity distribution sorted by count.
         
     '''
     assert partition_paths is not None, "No list of paths given, please specify."
+    assert tasktype is not None, "No selection of task type given, please specify."
 
     df = pd.DataFrame(columns=["file", "count", "share"])
-    entities = get_geval_entities()
+    entities = get_geval_entities(tasktype)
 
     for path in partition_paths:
         partition = pd.read_csv(path, header=None, delim_whitespace=True, usecols=[0])
@@ -265,36 +277,3 @@ def get_entity_distribution(partition_paths: list = None) -> pd.DataFrame:
         df = df.append({"file": path, "count": count, "share": (count / len(entities))}, ignore_index=True)
 
     return df
-        
-
-
-
-def write_vector_file(file_type: str = "txt", file_name: str = None, entities: list = None, embeddings: list = None):
-    ''' Writes embeddings and entities in a file in a way that GEval can read.
-    
-    Args:
-        file_type (str): the file type to be used. Standard is txt.
-        file_name (str): the file name that should be used. Will be written to models folder.
-        entities (list): the IRIs or names of the embedded entities.
-        embeddings (list): the embeddings that should be written in the file.
-        
-    Returns:
-        none
-        
-    '''
-
-    assert file_name is not None, "No file name given, please specify."
-    assert entities is not None, "No entities given, please give an array containing at least one."
-    assert embeddings is not None, "No embedding vectors given, please give an array containing at least one."
-
-    if(file_type == "txt"):
-        file_type = ".txt"
-    else: #only allow intended file types
-        return
-
-    with open(join("models", file_name + file_type), "w") as f:
-        for t, e in zip(entities, embeddings):
-            f.write(t)
-            for v in e:
-                f.write(" {}".format(v))
-            f.write("\n")
