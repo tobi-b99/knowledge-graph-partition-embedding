@@ -182,7 +182,7 @@ def get_geval_entities(tasktype: str = None) -> set:
     '''
     tasktype_list = ["all", "Classification", "Clustering", "Regression", "DocumentSimilarity","EntityRelatedness", "SemanticAnalogies"]
     assert tasktype is not None, "No selection of task type given, please specify."
-    assert tasktype not in tasktype_list, ("Lease provide a task type from the following choices: all, Classification, Clustering, "
+    assert tasktype in tasktype_list, ("Lease provide a task type from the following choices: all, Classification, Clustering, "
                                            "Regression, DocumentSimilarity, EntityRelatedness, SemanticAnalogies")
 
     geval_path = dirname(geval.__file__)
@@ -209,13 +209,13 @@ def get_geval_entities(tasktype: str = None) -> set:
     # DocumentSimilarity
     if(tasktype == "all" or tasktype == "DocumentSimilarity"):
         dsm = DocumentSimilarityDataManager(debugging_mode=False)
-        filtered_entities.update(set(dsm.get_entities(filename=join(geval_path, "DocumentSimilarity", "data", "LP50_entities.json")).iloc[:, 0]))
+        filtered_entities.update(set(dsm.get_entities(filename=join(geval_path, "DocumentSimilarity", "data", "LP50_entities.json")).iloc[:, 1]))
 
     # EntityRelatedness
     if(tasktype == "all" or tasktype == "EntityRelatedness"):
         with open(join(geval_path, "EntityRelatedness", "data", "KORE.txt"), "r") as file:
             for line in file:
-                filtered_entities.add(line)
+                filtered_entities.add(line.strip())
 
     # SemanticAnalogies
     if(tasktype == "all" or tasktype == "SemanticAnalogies"):
