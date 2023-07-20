@@ -5,7 +5,8 @@ The goal of this project is to experiment with partitioning knowledge graphs (KG
 
 ## Dependencies
 
-The project was using Python 3.7.12 with following required depencies:
+The project was done using Python 3.7.12 with following required depencies:
+- zlib (tested with 1.2.13)
 - numpy==1.19.1
 - pandas==1.0.5
 - scipy==1.5.1
