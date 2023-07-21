@@ -1,0 +1,7 @@
+task_name gold_standard_file model model_configuration metric ranking absolute_total relative_total
+DocumentSimilarity LP50 with_weights - pearson_score 13 16 16
+DocumentSimilarity LP50 with_weights - spearman_score 15 16 16
+DocumentSimilarity LP50 with_weights - harmonic_mean 15 16 16
+DocumentSimilarity LP50 without_weights - pearson_score 9 16 16
+DocumentSimilarity LP50 without_weights - spearman_score 11 16 16
+DocumentSimilarity LP50 without_weights - harmonic_mean 10 16 16

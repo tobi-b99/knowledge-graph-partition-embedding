@@ -1,0 +1,2 @@
+task_name gold_standard_file model model_configuration metric ranking absolute_total relative_total
+EntityRelatedness KORE - - kendalltau_correlation 2 17 11

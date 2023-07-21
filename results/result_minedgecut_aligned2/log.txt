@@ -1,0 +1,6 @@
+TESTED CONFIGURATION
+Vector filename: models\model_minedgecut\vectors_aligned2_filtered.txt
+Vector size:100
+Distance metric:cosine
+
+Entity Relatedness execution time: 2.48 seconds

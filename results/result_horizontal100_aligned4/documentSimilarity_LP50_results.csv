@@ -1,0 +1,3 @@
+task_name,gold_standard_file,coverage,conf,pearson_score,spearman_score,harmonic_mean
+DocumentSimilarity,LP50,0.9216300940438872,with_weights,0.371205702912605,0.308800998215238,0.337139888217222
+DocumentSimilarity,LP50,0.9216300940438872,without_weights,0.214070524358378,0.195443598574416,0.204333434606258

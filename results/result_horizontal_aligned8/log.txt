@@ -1,0 +1,9 @@
+TESTED CONFIGURATION
+Vector filename: models\model_horizontal\vectors_aligned8_filtered.txt
+Vector size:100
+Distance metric:cosine
+
+Classification execution time: 0.0:7.0:41.46 seconds
+Regression execution time: 526.5 seconds
+Entity Relatedness execution time: 528.02 seconds
+Semantic Analogies execution time: 552.21 seconds

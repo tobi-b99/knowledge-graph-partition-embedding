@@ -1,0 +1,5 @@
+task_name,gold_standard_file,coverage,top_k_value,right_answers,tot_answers,accuracy
+SemanticAnalogies,capital_country_entities,1.0,2,203,506,0.401185770750988
+SemanticAnalogies,all_capital_country_entities,1.0,2,968,4524,0.213969938107869
+SemanticAnalogies,currency_entities,0.8706697459584296,2,54,754,0.071618037135279
+SemanticAnalogies,city_state_entities,0.9432509120389136,2,391,2327,0.168027503223034

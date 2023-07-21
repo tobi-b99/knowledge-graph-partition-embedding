@@ -28,8 +28,8 @@ Horizontal:
     - 3min 27.5s
     - with embedText: 3min 50.8s
     - without removing duplicates: 3min 45.7s
-    - for the aligned0 partitions: 5min 23.5s -> filtering: 43.8s
-    - for the aligned1 partitions: 5min 26.7s -> filtering: 43.9s
+    - for the aligned0 partitions: 5min 23.5s -> filtering: 48.7s
+    - for the aligned1 partitions: 5min 26.7s -> filtering: 48s
     - for the aligned8 partitions: 7min 7.3s -> filtering: 49.9s
 - evaluation:
     - 6h 39min 6.2s (no filtering)
@@ -37,6 +37,7 @@ Horizontal:
     - without removing duplicates: 11h 41min 3.7s
     - for the aligned0 partitions: 9min 52s
     - for the aligned1 partitions: 9min 50.6s
+    - for the aligned8 partitions, only 4 tasks: 9min 15s
 
 Horizontal 100:
 - partition (+ encoding in chunks + statistics): 12min 54s (37min 10s)
@@ -61,9 +62,9 @@ Horizontal 100:
     - aligned to 88th partition: 59min 16.5s
     - aligned to 64th partition: 1h 2min 49.4s
 - combining the embeddings:
-    - 3min 9s -> filtering: 30.9s
-    - for the aligned0 partitions: 6min 44.5s -> filtering: 48.4s
-    - for the aligned95 partitions: 5min 54.8s -> filtering: 45.8s
+    - 3min 9s -> filtering: 33.4s
+    - for the aligned0 partitions: 6min 44.5s -> filtering: 47.2s
+    - for the aligned95 partitions: 5min 54.8s -> filtering: 43.6s
     - for the aligned44 partitions: 6min 20.8s -> filtering: 47.6s
     - for the aligned4 partitions:  6min 33.5s -> filtering: 47.4s
     - for the aligned88 partitions: 6min 30.4s -> filtering: 47.8s
@@ -72,6 +73,10 @@ Horizontal 100:
     - 9min 49.5s
     - for the aligned0 partitions: 10min 7.2s
     - for the aligned95 partitions: 10min 7.3s
+    - for the aligned44 partitions, only 2 tasks: 9min 9.6s
+    - for the aligned4 partitions, only 1 task: 19.5s
+    - for the aligned88 partitions, only 1 task: 5.1s
+    - for the aligned64 partitions, only 1 task: 29s
 
 Min Edge Cut:
 - partition (+ encoding in chunks + statistics): 33min 35s (51min 4s)
@@ -96,8 +101,8 @@ Min Edge Cut:
 - combining the embeddings:
     - 2min 11.1s
     - without removing duplicates: 5min 2.1s
-    - for the aligned0 partitions: 6min 21.8s -> filtering: 41.2s
-    - for the aligned3 partitions: 4min 38.9s -> filtering: 44.2s
+    - for the aligned0 partitions: 6min 21.8s -> filtering: 46s
+    - for the aligned3 partitions: 4min 38.9s -> filtering: 48.5s
     - for the aligned1 partitions: 6min 11.1s -> filtering: 50.8s
     - for the aligned2 partitions: 8min 16.4s -> filtering: 47s
 - evaluation:
@@ -106,6 +111,8 @@ Min Edge Cut:
     - without removing duplicates: failed partially
     - for the aligned0 partitions: 9min 38.4s
     - for the aligned3 partitions: 10min 5.3s
+    - for the aligned1 partitions, only 1 task: 19.2s
+    - for the aligned2 partitions, only 1 task: 4.9s
 
 Min Edge Cut 100:
 - partition (+ encoding in chunks + statistics): 35min 25s (1h 15min 2s)
@@ -130,8 +137,8 @@ Min Edge Cut 100:
     - aligned to 94th partition: 1h 16min 24.9s
     - aligned to 62nd partition: 1h 13min 39.1s
 - combining the embeddings:
-    - 4min 33.8s -> filtering: 35.3s
-    - for the aligned0 partitions: 8min 2.4s -> filtering: 45.7s
+    - 4min 33.8s -> filtering: 35.4s
+    - for the aligned0 partitions: 8min 2.4s -> filtering: 46.5s
     - for the aligned73 partitions: 6min 38s -> filtering: 46.9s
     - for the aligned68 partitions: 6min 52.6s -> filtering: 50.3s
     - for the aligned53 partitions: 6min 14.6s -> filtering: 49.3s
@@ -141,3 +148,7 @@ Min Edge Cut 100:
     - 9min 54.6s
     - for the aligned0 partitions: 10min 14.4s
     - for the aligned73 partitions: 10min 13.4s
+    - for the aligned68 partitions, only 2 tasks: 9min 9.1s
+    - for the aligned53 partitions, only 1 task: 19.1s
+    - for the aligned94 partitions, only 1 task: 4.9s
+    - for the aligned62 partitions, only 1 task: 29.1s
