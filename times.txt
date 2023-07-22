@@ -37,7 +37,7 @@ Horizontal:
     - without removing duplicates: 11h 41min 3.7s
     - for the aligned0 partitions: 9min 52s
     - for the aligned1 partitions: 9min 50.6s
-    - for the aligned8 partitions, only 4 tasks: 9min 15s
+    - for the aligned8 partitions, only 4 tasks: 9min 28.8s
 
 Horizontal 100:
 - partition (+ encoding in chunks + statistics): 12min 54s (37min 10s)
